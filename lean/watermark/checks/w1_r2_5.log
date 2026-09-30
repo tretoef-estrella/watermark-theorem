@@ -1,0 +1,8 @@
+m=5 rank K = 38 (want 38)
+sum of augs zero on K: true
+m | aug_j on K: true
+control (partial fibre functional divisible by m on K?): false
+rank V = 37 (want 37)
+prod nonzero elementary divisors = m^12 exact? true
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=118896 t=1s

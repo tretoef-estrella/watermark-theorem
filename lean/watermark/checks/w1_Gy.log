@@ -1,0 +1,4 @@
+m=5 Gy formulas ok=True exceptional (family,slope)=[('1', 4), ('2', 1)]
+m=7 Gy formulas ok=True exceptional (family,slope)=[('1', 6), ('2', 1)]
+m=11 Gy formulas ok=True exceptional (family,slope)=[('1', 10), ('2', 1)]
+VIGIA-FIN-OK exit=0 pico_kb=10192 t=4s
