@@ -1,0 +1,13 @@
+@gram_mulVec_satMap : ∀ {m : ℕ} [inst : NeZero m] {D : SatData ℤ m},
+  D ∈ SatSrc ℤ m → (gram m).mulVec ((satMap ℤ m) D) = 0
+SAT_le_K : ∀ (m : ℕ) [inst : NeZero m], SAT m ≤ K m
+@eq_zero_of_satMap_eq_zero : ∀ {m : ℕ} [inst : NeZero m],
+  Odd m → ∀ {D : SatData ℤ m}, D ∈ SatSrc ℤ m → (satMap ℤ m) D = 0 → D = 0
+@satMap_injOn : ∀ {m : ℕ} [inst : NeZero m], Odd m → Set.InjOn ⇑(satMap ℤ m) ↑(SatSrc ℤ m)
+@finrank_SAT : ∀ {m : ℕ} [inst : NeZero m], Odd m → Module.finrank ℤ ↥(SAT m) = 9 * m - 7
+@finrank_satSrc_int : ∀ {m : ℕ} [inst : NeZero m], Module.finrank ℤ ↥(SatSrc ℤ m) = 9 * m - 7
+'Watermark.gram_mulVec_satMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Watermark.SAT_le_K' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Watermark.satMap_injOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Watermark.finrank_SAT' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=2029776 t=116s

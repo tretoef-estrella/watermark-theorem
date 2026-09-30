@@ -1,0 +1,37 @@
+@gram_transpose : ∀ {m : ℕ}, (gram m).transpose = gram m
+@gram_mulVec_famVec : ∀ {m : ℕ} [inst : NeZero m] (j : Fin 3), (gram m).mulVec (famVec m j) = ↑m • ones m
+@sum_E_pencil : ∀ {m : ℕ} [inst : NeZero m] [Fact (Nat.Prime m)] (u : Point m → ℤ) (p : Point m),
+  ∑ π, E (pencil π) u p = ↑m * u p + ∑ q, u q
+@aug_of_mem_K : ∀ {m : ℕ} [inst : NeZero m] [Fact (Nat.Prime m)],
+  5 ≤ m →
+    ∀ {x : A m},
+      x ∈ K m →
+        aug (restrict x 0) + aug (restrict x 1) + aug (restrict x 2) = 0 ∧ ∀ (j : Fin 3), ↑m ∣ aug (restrict x j)
+@sum_eq_zero_of_mem_K : ∀ {m : ℕ} [inst : NeZero m] {x : A m}, x ∈ K m → ∑ p, x p = 0
+formV : (m : ℕ) → [inst : NeZero m] → LinearMap.BilinForm ℤ (V m)
+@formV_mk : ∀ {m : ℕ} [inst : NeZero m] (x y : A m),
+  ((formV m) (Submodule.Quotient.mk x)) (Submodule.Quotient.mk y) = ((gramForm m) x) y
+@formV_isSymm : ∀ {m : ℕ} [inst : NeZero m], (formV m).IsSymm
+def Watermark.gramUpper : (m : ℕ) → Line m → Line m → ℤ :=
+fun m p q =>
+  if p.1 = q.1 then if p.2 = q.2 then 2 - ↑m else if p.2.1 = q.2.1 ∨ p.2.2 = q.2.2 then 1 else 0
+  else
+    if p.1 = 0 ∧ q.1 = 1 then if p.2.1 - p.2.2 = q.2.1 - q.2.2 then 1 else 0
+    else
+      if p.1 = 1 ∧ q.1 = 2 then if p.2.1 + p.2.2 = q.2.1 + q.2.2 then 1 else 0
+      else if p.1 = 0 ∧ q.1 = 2 then if q.2.1 - q.2.2 = p.2.1 + p.2.2 + 1 then 1 else 0 else 0
+def Watermark.gram : (m : ℕ) → Matrix (Line m) (Line m) ℤ :=
+fun m => Matrix.of fun p q => if p.1 ≤ q.1 then gramUpper m p q else gramUpper m q p
+def Watermark.E : {m : ℕ} → [NeZero m] → (Point m → ZMod m) → (Point m → ℤ) → Point m → ℤ :=
+fun {m} [NeZero m] π u p => ∑ q with π q = π p, u q
+def Watermark.pencil : {m : ℕ} → Option (ZMod m) → Point m → ZMod m :=
+fun {m} x =>
+  match (motive := Option (ZMod m) → Point m → ZMod m) x with
+  | some t => fun q => q.1 + t * q.2
+  | none => fun q => q.2
+'Watermark.gram_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Watermark.gram_mulVec_famVec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Watermark.sum_E_pencil' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Watermark.aug_of_mem_K' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Watermark.formV_isSymm' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=2519008 t=96s

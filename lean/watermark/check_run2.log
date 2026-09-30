@@ -1,0 +1,34 @@
+@[reducible] def Watermark.SatData.{u_1} : Type u_1 → ℕ → Type u_1 :=
+fun R m => (Fin 3 → ZMod m → R) × (Fin 3 → ZMod m → R) × (Fin 3 → ZMod m → R) × R × R
+def Watermark.sumZero.{u_1} : (R : Type u_1) → [inst : CommRing R] → (m : ℕ) → [NeZero m] → Submodule R (ZMod m → R) :=
+fun R [CommRing R] m [NeZero m] => (sumMap R m).ker
+def Watermark.SatSrc.{u_1} : (R : Type u_1) → [inst : CommRing R] → (m : ℕ) → [NeZero m] → Submodule R (SatData R m) :=
+fun R [CommRing R] m [NeZero m] => (satSums R m).ker
+def Watermark.satMap.{u_1} : (R : Type u_1) → [inst : CommRing R] → (m : ℕ) → SatData R m →ₗ[R] Line m → R :=
+fun R [CommRing R] m => { toFun := satFun R m, map_add' := ⋯, map_smul' := ⋯ }
+def Watermark.SAT : (m : ℕ) → [NeZero m] → Submodule ℤ (A m) :=
+fun m [NeZero m] => Submodule.map (satMap ℤ m) (SatSrc ℤ m)
+@finrank_sumZero : ∀ {R : Type u_1} [inst : Field R] {m : ℕ} [inst_1 : NeZero m],
+  Module.finrank R ↥(sumZero R m) = m - 1
+@finrank_satSrc : ∀ {R : Type u_1} [inst : Field R] {m : ℕ} [inst_1 : NeZero m],
+  Module.finrank R ↥(SatSrc R m) = 9 * m - 7
+@satMap_red : ∀ {m : ℕ} (D : SatData ℤ m), (fun p => ↑((satMap ℤ m) D p)) = (satMap (ZMod m) m) D.red
+@red_mem_satSrc : ∀ {m : ℕ} [inst : NeZero m] {D : SatData ℤ m}, D ∈ SatSrc ℤ m → D.red ∈ SatSrc (ZMod m) m
+@exists_sumZero_lift : ∀ {m : ℕ} [inst : NeZero m] {f : ZMod m → ZMod m},
+  f ∈ sumZero (ZMod m) m → ∃ y ∈ sumZero ℤ m, (fun x => ↑(y x)) = f
+@exists_satSrc_lift : ∀ {m : ℕ} [inst : NeZero m] {E : SatData (ZMod m) m},
+  E ∈ SatSrc (ZMod m) m → ∃ D ∈ SatSrc ℤ m, D.red = E
+@finrank_ker_satMap : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)],
+  5 ≤ m → Module.finrank (ZMod m) ↥((satMap (ZMod m) m).domRestrict (SatSrc (ZMod m) m)).ker = 12
+@finrank_range_satMap : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)],
+  5 ≤ m → Module.finrank (ZMod m) ↥((satMap (ZMod m) m).domRestrict (SatSrc (ZMod m) m)).range = 9 * m - 19
+@map_ker_satMap_eq : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)],
+  5 ≤ m →
+    Submodule.map (SatSrc (ZMod m) m).subtype ((satMap (ZMod m) m).domRestrict (SatSrc (ZMod m) m)).ker =
+      LemmaC.param.range
+'Watermark.finrank_satSrc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Watermark.satMap_red' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Watermark.exists_satSrc_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Watermark.finrank_ker_satMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Watermark.finrank_range_satMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=2353264 t=102s
