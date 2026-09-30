@@ -1,0 +1,7 @@
+m=5: dim of relations = 12 (want 12); every relation has quadratic w's with common leading coeff: True
+m=7: dim of relations = 12 (want 12); every relation has quadratic w's with common leading coeff: True
+m=11: dim of relations = 12 (want 12); every relation has quadratic w's with common leading coeff: True
+m=13: dim of relations = 12 (want 12); every relation has quadratic w's with common leading coeff: True
+m=3 (control, degenerate): dim = 11; property: True
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=240 t=0s

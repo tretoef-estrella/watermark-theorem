@@ -1,0 +1,40 @@
+m=5 n=75 symmetric=True G.N_j=m.1:True R.1:True
+m=7 n=147 symmetric=True G.N_j=m.1:True R.1:True
+m=11 n=363 symmetric=True G.N_j=m.1:True R.1:True
+FIN-OK
+m=3 shift s=0: SAT in K: False
+m=3 shift s=1: SAT in K: False
+m=3 shift s=2: SAT in K: True
+m=3 s=2: #gens=20 (9m-7=20) rank_Q=20 rank_mod_m=9 (9m-19=8) kernel_mod_m=11
+m=3 control (0,2) with pencils swapped: in K: False
+m=5 shift s=0: SAT in K: False
+m=5 shift s=1: SAT in K: False
+m=5 shift s=2: SAT in K: False
+m=5 shift s=3: SAT in K: False
+m=5 shift s=4: SAT in K: True
+m=5 s=4: #gens=38 (9m-7=38) rank_Q=38 rank_mod_m=26 (9m-19=26) kernel_mod_m=12
+m=5 control (0,2) with pencils swapped: in K: False
+m=7 shift s=0: SAT in K: False
+m=7 shift s=1: SAT in K: False
+m=7 shift s=2: SAT in K: False
+m=7 shift s=3: SAT in K: False
+m=7 shift s=4: SAT in K: False
+m=7 shift s=5: SAT in K: False
+m=7 shift s=6: SAT in K: True
+m=7 s=6: #gens=56 (9m-7=56) rank_Q=56 rank_mod_m=44 (9m-19=44) kernel_mod_m=12
+m=7 control (0,2) with pencils swapped: in K: False
+m=11 shift s=0: SAT in K: False
+m=11 shift s=1: SAT in K: False
+m=11 shift s=2: SAT in K: False
+m=11 shift s=3: SAT in K: False
+m=11 shift s=4: SAT in K: False
+m=11 shift s=5: SAT in K: False
+m=11 shift s=6: SAT in K: False
+m=11 shift s=7: SAT in K: False
+m=11 shift s=8: SAT in K: False
+m=11 shift s=9: SAT in K: False
+m=11 shift s=10: SAT in K: True
+m=11 s=10: #gens=92 (9m-7=92) rank_Q=92 rank_mod_m=80 (9m-19=80) kernel_mod_m=12
+m=11 control (0,2) with pencils swapped: in K: False
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=26992 t=1s
