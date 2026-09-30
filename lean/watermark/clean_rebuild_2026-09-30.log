@@ -1,0 +1,12 @@
+clean rebuild start 07:43:16
+RequestProject.Main exit_line: VIGIA-FIN-OK exit=0 pico_kb=1711440 t=168s wall=168s
+RequestProject.Watermark.Defs exit_line: VIGIA-FIN-OK exit=0 pico_kb=2158144 t=39s wall=40s
+RequestProject.Watermark.W1 exit_line: VIGIA-FIN-OK exit=0 pico_kb=1929296 t=62s wall=62s
+RequestProject.Watermark.W2 exit_line: VIGIA-FIN-OK exit=0 pico_kb=2076064 t=69s wall=69s
+RequestProject.Watermark.W3 exit_line: VIGIA-FIN-OK exit=0 pico_kb=1979424 t=55s wall=55s
+RequestProject.Watermark.W4 exit_line: VIGIA-FIN-OK exit=0 pico_kb=2080368 t=62s wall=63s
+RequestProject.Watermark.W5 exit_line: VIGIA-FIN-OK exit=0 pico_kb=2059760 t=45s wall=45s
+RequestProject.Watermark.W6 exit_line: VIGIA-FIN-OK exit=0 pico_kb=1965120 t=66s wall=67s
+RequestProject.Watermark.W7 exit_line: VIGIA-FIN-OK exit=0 pico_kb=1954976 t=88s wall=89s
+plain lake build: Build completed successfully (8035 jobs). VIGIA-FIN-OK exit=0 pico_kb=766112 t=7s
+clean rebuild end 07:54:21
