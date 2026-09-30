@@ -1,0 +1,5 @@
+rank K = 38
+[A : F+K] = 14551915228366851806640625  log_m = 36
+[K : SAT] = 244140625 log_m = 12
+predicted [A:F+K] exponent = 36
+VIGIA-FIN-OK exit=0 pico_kb=1250448 t=39s

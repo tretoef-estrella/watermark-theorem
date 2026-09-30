@@ -1,0 +1,4 @@
+m=5: 38 kernel basis vectors; census holds: True; m*x = satMap(D) with D admissible: True
+m=7: 56 kernel basis vectors; census holds: True; m*x = satMap(D) with D admissible: True
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=419968 t=14s
