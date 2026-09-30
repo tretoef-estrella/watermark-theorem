@@ -1,0 +1,20 @@
+gram_mul_ylad_mul_gram : ∀ (m : ℕ) [inst : Fact (Nat.Prime m)], 5 ≤ m → gram m * ylad m * gram m = (6 * ↑m ^ 2) • gram m
+exists_toMatrix_mul_eq : ∀ (m : ℕ) [inst : Fact (Nat.Prime m)],
+  5 ≤ m →
+    ∀ {ι : Type u_1} [inst_1 : Fintype ι] [inst_2 : DecidableEq ι] (b : Module.Basis ι ℤ (V m)),
+      ∃ X, (LinearMap.BilinForm.toMatrix b) (formV m) * X = ↑m ^ 2 • 1
+exists_formV_eq_smul : ∀ (m : ℕ) [inst : Fact (Nat.Prime m)],
+  5 ≤ m → ∀ (f : Module.Dual ℤ (V m)), ∃ v, ↑m ^ 2 • f = (formV m) v
+def DoubleLadder.ylad : (m : ℕ) → Matrix (Line m) (Line m) ℤ :=
+fun m =>
+  Matrix.of fun p q =>
+    if p.1 = q.1 then
+      ((((if p.2.1 = q.2.1 then 1 else 0) + if p.2.2 = q.2.2 then 1 else 0) +
+            3 * if p.2.1 - p.2.2 = q.2.1 - q.2.2 then 1 else 0) +
+          3 * if p.2.1 + p.2.2 = q.2.1 + q.2.2 then 1 else 0) -
+        if p = q then 6 * ↑m else 0
+    else 0
+'DoubleLadder.gram_mul_ylad_mul_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DoubleLadder.exists_toMatrix_mul_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DoubleLadder.exists_formV_eq_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1708592 t=158s

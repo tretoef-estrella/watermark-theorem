@@ -1,0 +1,7 @@
+'DoubleLadder.gram_eq_shadow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DoubleLadder.ker_relMap_eq_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DoubleLadder.finrank_ker_relMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DoubleLadder.sum_mul_shift_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DoubleLadder.rank_gram_map' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DoubleLadder.rank_toMatrix_map' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1962816 t=149s
