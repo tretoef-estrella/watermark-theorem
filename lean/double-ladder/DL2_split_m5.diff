@@ -1,0 +1,320 @@
+739,740c739,815
+< /-- `Ḡ = B C` at `m = 5`, checked by evaluation. -/
+< theorem hBC : (gram 5).map (Int.castRingHom (ZMod 5)) = matB * matC := by
+---
+> /-- Rows `(j, a, ·)` = `(0, 0, ·)` of `Ḡ = B C` at `m = 5`, checked by evaluation.
+> (Split per `(j, a)` so that the kernel cache stays small; Grepy, local build, 30 Sep 2026.) -/
+> theorem hBC_0_0 : ∀ b : ZMod 5, ∀ q : Line 5,
+>     (gram 5).map (Int.castRingHom (ZMod 5)) ((⟨0, by decide⟩ : Fin 3), (0 : ZMod 5), b) q =
+>       (matB * matC) ((⟨0, by decide⟩ : Fin 3), (0 : ZMod 5), b) q := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Rows `(j, a, ·)` = `(0, 1, ·)` of `Ḡ = B C` at `m = 5`, checked by evaluation.
+> (Split per `(j, a)` so that the kernel cache stays small; Grepy, local build, 30 Sep 2026.) -/
+> theorem hBC_0_1 : ∀ b : ZMod 5, ∀ q : Line 5,
+>     (gram 5).map (Int.castRingHom (ZMod 5)) ((⟨0, by decide⟩ : Fin 3), (1 : ZMod 5), b) q =
+>       (matB * matC) ((⟨0, by decide⟩ : Fin 3), (1 : ZMod 5), b) q := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Rows `(j, a, ·)` = `(0, 2, ·)` of `Ḡ = B C` at `m = 5`, checked by evaluation.
+> (Split per `(j, a)` so that the kernel cache stays small; Grepy, local build, 30 Sep 2026.) -/
+> theorem hBC_0_2 : ∀ b : ZMod 5, ∀ q : Line 5,
+>     (gram 5).map (Int.castRingHom (ZMod 5)) ((⟨0, by decide⟩ : Fin 3), (2 : ZMod 5), b) q =
+>       (matB * matC) ((⟨0, by decide⟩ : Fin 3), (2 : ZMod 5), b) q := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Rows `(j, a, ·)` = `(0, 3, ·)` of `Ḡ = B C` at `m = 5`, checked by evaluation.
+> (Split per `(j, a)` so that the kernel cache stays small; Grepy, local build, 30 Sep 2026.) -/
+> theorem hBC_0_3 : ∀ b : ZMod 5, ∀ q : Line 5,
+>     (gram 5).map (Int.castRingHom (ZMod 5)) ((⟨0, by decide⟩ : Fin 3), (3 : ZMod 5), b) q =
+>       (matB * matC) ((⟨0, by decide⟩ : Fin 3), (3 : ZMod 5), b) q := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Rows `(j, a, ·)` = `(0, 4, ·)` of `Ḡ = B C` at `m = 5`, checked by evaluation.
+> (Split per `(j, a)` so that the kernel cache stays small; Grepy, local build, 30 Sep 2026.) -/
+> theorem hBC_0_4 : ∀ b : ZMod 5, ∀ q : Line 5,
+>     (gram 5).map (Int.castRingHom (ZMod 5)) ((⟨0, by decide⟩ : Fin 3), (4 : ZMod 5), b) q =
+>       (matB * matC) ((⟨0, by decide⟩ : Fin 3), (4 : ZMod 5), b) q := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Rows `(j, a, ·)` = `(1, 0, ·)` of `Ḡ = B C` at `m = 5`, checked by evaluation.
+> (Split per `(j, a)` so that the kernel cache stays small; Grepy, local build, 30 Sep 2026.) -/
+> theorem hBC_1_0 : ∀ b : ZMod 5, ∀ q : Line 5,
+>     (gram 5).map (Int.castRingHom (ZMod 5)) ((⟨1, by decide⟩ : Fin 3), (0 : ZMod 5), b) q =
+>       (matB * matC) ((⟨1, by decide⟩ : Fin 3), (0 : ZMod 5), b) q := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Rows `(j, a, ·)` = `(1, 1, ·)` of `Ḡ = B C` at `m = 5`, checked by evaluation.
+> (Split per `(j, a)` so that the kernel cache stays small; Grepy, local build, 30 Sep 2026.) -/
+> theorem hBC_1_1 : ∀ b : ZMod 5, ∀ q : Line 5,
+>     (gram 5).map (Int.castRingHom (ZMod 5)) ((⟨1, by decide⟩ : Fin 3), (1 : ZMod 5), b) q =
+>       (matB * matC) ((⟨1, by decide⟩ : Fin 3), (1 : ZMod 5), b) q := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Rows `(j, a, ·)` = `(1, 2, ·)` of `Ḡ = B C` at `m = 5`, checked by evaluation.
+> (Split per `(j, a)` so that the kernel cache stays small; Grepy, local build, 30 Sep 2026.) -/
+> theorem hBC_1_2 : ∀ b : ZMod 5, ∀ q : Line 5,
+>     (gram 5).map (Int.castRingHom (ZMod 5)) ((⟨1, by decide⟩ : Fin 3), (2 : ZMod 5), b) q =
+>       (matB * matC) ((⟨1, by decide⟩ : Fin 3), (2 : ZMod 5), b) q := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Rows `(j, a, ·)` = `(1, 3, ·)` of `Ḡ = B C` at `m = 5`, checked by evaluation.
+> (Split per `(j, a)` so that the kernel cache stays small; Grepy, local build, 30 Sep 2026.) -/
+> theorem hBC_1_3 : ∀ b : ZMod 5, ∀ q : Line 5,
+>     (gram 5).map (Int.castRingHom (ZMod 5)) ((⟨1, by decide⟩ : Fin 3), (3 : ZMod 5), b) q =
+>       (matB * matC) ((⟨1, by decide⟩ : Fin 3), (3 : ZMod 5), b) q := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Rows `(j, a, ·)` = `(1, 4, ·)` of `Ḡ = B C` at `m = 5`, checked by evaluation.
+> (Split per `(j, a)` so that the kernel cache stays small; Grepy, local build, 30 Sep 2026.) -/
+> theorem hBC_1_4 : ∀ b : ZMod 5, ∀ q : Line 5,
+>     (gram 5).map (Int.castRingHom (ZMod 5)) ((⟨1, by decide⟩ : Fin 3), (4 : ZMod 5), b) q =
+>       (matB * matC) ((⟨1, by decide⟩ : Fin 3), (4 : ZMod 5), b) q := by
+742a818,863
+> set_option maxRecDepth 100000 in
+> /-- Rows `(j, a, ·)` = `(2, 0, ·)` of `Ḡ = B C` at `m = 5`, checked by evaluation.
+> (Split per `(j, a)` so that the kernel cache stays small; Grepy, local build, 30 Sep 2026.) -/
+> theorem hBC_2_0 : ∀ b : ZMod 5, ∀ q : Line 5,
+>     (gram 5).map (Int.castRingHom (ZMod 5)) ((⟨2, by decide⟩ : Fin 3), (0 : ZMod 5), b) q =
+>       (matB * matC) ((⟨2, by decide⟩ : Fin 3), (0 : ZMod 5), b) q := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Rows `(j, a, ·)` = `(2, 1, ·)` of `Ḡ = B C` at `m = 5`, checked by evaluation.
+> (Split per `(j, a)` so that the kernel cache stays small; Grepy, local build, 30 Sep 2026.) -/
+> theorem hBC_2_1 : ∀ b : ZMod 5, ∀ q : Line 5,
+>     (gram 5).map (Int.castRingHom (ZMod 5)) ((⟨2, by decide⟩ : Fin 3), (1 : ZMod 5), b) q =
+>       (matB * matC) ((⟨2, by decide⟩ : Fin 3), (1 : ZMod 5), b) q := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Rows `(j, a, ·)` = `(2, 2, ·)` of `Ḡ = B C` at `m = 5`, checked by evaluation.
+> (Split per `(j, a)` so that the kernel cache stays small; Grepy, local build, 30 Sep 2026.) -/
+> theorem hBC_2_2 : ∀ b : ZMod 5, ∀ q : Line 5,
+>     (gram 5).map (Int.castRingHom (ZMod 5)) ((⟨2, by decide⟩ : Fin 3), (2 : ZMod 5), b) q =
+>       (matB * matC) ((⟨2, by decide⟩ : Fin 3), (2 : ZMod 5), b) q := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Rows `(j, a, ·)` = `(2, 3, ·)` of `Ḡ = B C` at `m = 5`, checked by evaluation.
+> (Split per `(j, a)` so that the kernel cache stays small; Grepy, local build, 30 Sep 2026.) -/
+> theorem hBC_2_3 : ∀ b : ZMod 5, ∀ q : Line 5,
+>     (gram 5).map (Int.castRingHom (ZMod 5)) ((⟨2, by decide⟩ : Fin 3), (3 : ZMod 5), b) q =
+>       (matB * matC) ((⟨2, by decide⟩ : Fin 3), (3 : ZMod 5), b) q := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Rows `(j, a, ·)` = `(2, 4, ·)` of `Ḡ = B C` at `m = 5`, checked by evaluation.
+> (Split per `(j, a)` so that the kernel cache stays small; Grepy, local build, 30 Sep 2026.) -/
+> theorem hBC_2_4 : ∀ b : ZMod 5, ∀ q : Line 5,
+>     (gram 5).map (Int.castRingHom (ZMod 5)) ((⟨2, by decide⟩ : Fin 3), (4 : ZMod 5), b) q =
+>       (matB * matC) ((⟨2, by decide⟩ : Fin 3), (4 : ZMod 5), b) q := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- `Ḡ = B C` at `m = 5`, assembled from the fifteen row blocks above. -/
+> theorem hBC : (gram 5).map (Int.castRingHom (ZMod 5)) = matB * matC := by
+>   ext ⟨j, a, b⟩ q
+>   fin_cases j <;> fin_cases a <;> first | exact hBC_0_0 b q | exact hBC_0_1 b q | exact hBC_0_2 b q | exact hBC_0_3 b q | exact hBC_0_4 b q | exact hBC_1_0 b q | exact hBC_1_1 b q | exact hBC_1_2 b q | exact hBC_1_3 b q | exact hBC_1_4 b q | exact hBC_2_0 b q | exact hBC_2_1 b q | exact hBC_2_2 b q | exact hBC_2_3 b q | exact hBC_2_4 b q
+> 
+754c875,1057
+< /-- Rows `fiveRows` of `Ḡ` times `Y` is the identity at `m = 5`, checked by evaluation. -/
+---
+> /-- Row `0` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_0 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨0, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨0, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `1` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_1 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨1, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨1, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `2` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_2 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨2, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨2, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `3` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_3 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨3, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨3, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `4` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_4 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨4, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨4, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `5` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_5 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨5, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨5, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `6` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_6 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨6, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨6, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `7` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_7 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨7, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨7, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `8` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_8 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨8, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨8, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `9` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_9 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨9, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨9, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `10` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_10 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨10, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨10, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `11` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_11 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨11, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨11, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `12` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_12 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨12, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨12, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `13` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_13 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨13, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨13, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `14` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_14 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨14, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨14, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `15` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_15 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨15, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨15, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `16` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_16 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨16, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨16, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `17` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_17 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨17, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨17, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `18` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_18 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨18, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨18, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `19` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_19 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨19, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨19, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `20` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_20 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨20, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨20, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `21` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_21 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨21, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨21, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `22` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_22 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨22, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨22, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `23` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_23 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨23, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨23, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `24` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_24 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨24, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨24, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Row `25` of `(rows of Ḡ) · Y = 1` at `m = 5`, checked by evaluation. -/
+> theorem hXY_25 : ∀ k : Fin 26,
+>     (((gram 5).map (Int.castRingHom (ZMod 5))).submatrix rowLine id * matY) (⟨25, by decide⟩ : Fin 26) k =
+>       (1 : Matrix (Fin 26) (Fin 26) (ZMod 5)) (⟨25, by decide⟩ : Fin 26) k := by
+>   decide +kernel
+> 
+> set_option maxRecDepth 100000 in
+> /-- Rows `fiveRows` of `Ḡ` times `Y` is the identity at `m = 5`, assembled from the rows above. -/
+757c1060,1062
+<   decide +kernel
+---
+>   ext i k
+>   fin_cases i
+>   exacts [hXY_0 k, hXY_1 k, hXY_2 k, hXY_3 k, hXY_4 k, hXY_5 k, hXY_6 k, hXY_7 k, hXY_8 k, hXY_9 k, hXY_10 k, hXY_11 k, hXY_12 k, hXY_13 k, hXY_14 k, hXY_15 k, hXY_16 k, hXY_17 k, hXY_18 k, hXY_19 k, hXY_20 k, hXY_21 k, hXY_22 k, hXY_23 k, hXY_24 k, hXY_25 k]

@@ -1,0 +1,26 @@
+double_ladder_theorem : ∀ (m : ℕ) [inst : Fact (Nat.Prime m)],
+  7 ≤ m → Nonempty (D m ≃+ (Fin (3 * m ^ 2 + 59 - 24 * m) → ZMod m) × (Fin (3 * m - 16) → ZMod (m ^ 2)))
+double_ladder_five : Nonempty (D 5 ≃+ (Fin 10 → ZMod 5) × ZMod 25)
+'DoubleLadder.double_ladder_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DoubleLadder.double_ladder_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+@[reducible] def DoubleLadder.D : (m : ℕ) → [NeZero m] → Type :=
+fun m [NeZero m] => Module.Dual ℤ (V m) ⧸ LinearMap.range (formV m)
+def DoubleLadder.ylad : (m : ℕ) → Matrix (Line m) (Line m) ℤ :=
+fun m =>
+  Matrix.of fun p q =>
+    if p.1 = q.1 then
+      ((((if p.2.1 = q.2.1 then 1 else 0) + if p.2.2 = q.2.2 then 1 else 0) +
+            3 * if p.2.1 - p.2.2 = q.2.1 - q.2.2 then 1 else 0) +
+          3 * if p.2.1 + p.2.2 = q.2.1 + q.2.2 then 1 else 0) -
+        if p = q then 6 * ↑m else 0
+    else 0
+gram_mul_ylad_mul_gram : ∀ (m : ℕ) [inst : Fact (Nat.Prime m)], 5 ≤ m → gram m * ylad m * gram m = (6 * ↑m ^ 2) • gram m
+exists_formV_eq_smul : ∀ (m : ℕ) [inst : Fact (Nat.Prime m)],
+  5 ≤ m → ∀ (f : Module.Dual ℤ (V m)), ∃ v, ↑m ^ 2 • f = (formV m) v
+rank_gram_map : ∀ (m : ℕ) [inst : Fact (Nat.Prime m)],
+  7 ≤ m → ((gram m).map ⇑(Int.castRingHom (ZMod m))).rank = 12 * (m - 3)
+rank_gram_map_five : ((gram 5).map ⇑(Int.castRingHom (ZMod 5))).rank = 26
+'DoubleLadder.gram_mul_ylad_mul_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DoubleLadder.rank_gram_map' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DoubleLadder.rank_gram_map_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=2203136 t=99s

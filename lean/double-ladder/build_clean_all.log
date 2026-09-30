@@ -1,0 +1,13 @@
+✔ [8026/8036] Built RequestProject.Watermark.Defs (24s)
+✔ [8027/8036] Built RequestProject.Watermark.W1 (42s)
+✔ [8028/8036] Built RequestProject.Watermark.W2 (44s)
+✔ [8029/8036] Built RequestProject.Watermark.W3 (24s)
+✔ [8030/8036] Built RequestProject.Watermark.W4 (29s)
+✔ [8031/8036] Built RequestProject.Watermark.W5 (28s)
+✔ [8032/8036] Built RequestProject.Watermark.W6 (26s)
+✔ [8033/8036] Built RequestProject.Watermark.W7 (24s)
+✔ [8034/8036] Built RequestProject.DoubleLadder.DL1 (24s)
+✔ [8035/8036] Built RequestProject.DoubleLadder.DL2 (86s)
+✔ [8036/8036] Built RequestProject.DoubleLadder.DL3 (14s)
+Build completed successfully (8036 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=4137984 t=333s
