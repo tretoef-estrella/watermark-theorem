@@ -1,0 +1,6 @@
+m=5: GYG=6m^2G True | control GYG=6mG False | weights(1,1,1,1) give scalar multiple False | minpoly G(G+m)(G+2m)(G-3m)=0 True
+m=7: GYG=6m^2G True | control GYG=6mG False | weights(1,1,1,1) give scalar multiple False | minpoly G(G+m)(G+2m)(G-3m)=0 True
+m=11: GYG=6m^2G True | control GYG=6mG False | weights(1,1,1,1) give scalar multiple skip | minpoly G(G+m)(G+2m)(G-3m)=0 True
+m=13: GYG=6m^2G True | control GYG=6mG False | weights(1,1,1,1) give scalar multiple skip | minpoly G(G+m)(G+2m)(G-3m)=0 True
+m=17: GYG=6m^2G True | control GYG=6mG False | weights(1,1,1,1) give scalar multiple skip | minpoly G(G+m)(G+2m)(G-3m)=0 True
+VIGIA-FIN-OK exit=0 pico_kb=81296 t=15s
