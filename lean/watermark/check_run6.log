@@ -1,0 +1,27 @@
+@gramForm_pb_pb_of_ne : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)],
+  5 ≤ m →
+    ∀ {β β' : FIdx m},
+      β ≠ β' →
+        ∀ {u v : ZMod m → ℤ},
+          u ∈ sumZero ℤ m → v ∈ sumZero ℤ m → ((gramForm m) (pb β.fam β.pen u)) (pb β'.fam β'.pen v) = 0
+@gramForm_famVec_pb : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)] (j : Fin 3) (π : Option (ZMod m)) {u : ZMod m → ℤ},
+  u ∈ sumZero ℤ m → ((gramForm m) (famVec m 0)) (pb j π u) = 0
+@gramForm_pb_pb_self : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)],
+  5 ≤ m →
+    ∀ (β : FIdx m) {u v : ZMod m → ℤ},
+      u ∈ sumZero ℤ m →
+        v ∈ sumZero ℤ m → ((gramForm m) (pb β.fam β.pen u)) (pb β.fam β.pen v) = -↑m ^ 2 * ∑ x, u x * v x
+@gramForm_famVec_self : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)], ((gramForm m) (famVec m 0)) (famVec m 0) = ↑m ^ 3
+@F_inf_K : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)], 5 ≤ m → F m ⊓ K m = ⊥
+@finrank_F : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)], 5 ≤ m → Module.finrank ℤ ↥(F m) = 3 * (m - 1) * (m - 2) + 1
+@index_Lfam : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)], (Lfam m).toAddSubgroup.index = m ^ ((m ^ 2 + m + 2) / 2)
+@F_sup_SAT : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)], 5 ≤ m → F m ⊔ SAT m = L m
+@index_F_sup_SAT : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)],
+  5 ≤ m → (F m ⊔ SAT m).toAddSubgroup.index = m ^ (3 * (m ^ 2 + m + 2) / 2)
+@index_F_sup_K : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)],
+  5 ≤ m → (F m ⊔ K m).toAddSubgroup.index = m ^ (3 * (m ^ 2 + m + 2) / 2 - 12)
+'Watermark.F_inf_K' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Watermark.finrank_F' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Watermark.index_Lfam' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Watermark.index_F_sup_K' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1850064 t=124s

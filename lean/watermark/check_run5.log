@@ -1,0 +1,20 @@
+@fib_live_const : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)] {x : A m},
+  x ∈ K m → ∀ (j : Fin 3) {t : ZMod m}, t ≠ 0 → t ≠ 1 → t ≠ -1 → ∃ c, ∀ (v : ZMod m), fib (some t) (restrict x j) v = c
+@fib_overlap_zero_one : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)],
+  5 ≤ m →
+    ∀ {x : A m}, x ∈ K m → ∃ c, ∀ (v : ZMod m), fib (some (-1)) (restrict x 0) v - fib (some (-1)) (restrict x 1) v = c
+@fib_overlap_one_two : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)],
+  5 ≤ m → ∀ {x : A m}, x ∈ K m → ∃ c, ∀ (v : ZMod m), fib (some 1) (restrict x 1) v - fib (some 1) (restrict x 2) v = c
+@fib_overlap_zero_two : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)],
+  5 ≤ m →
+    ∀ {x : A m},
+      x ∈ K m → ∃ c, ∀ (v : ZMod m), fib (some 1) (restrict x 0) v - fib (some (-1)) (restrict x 2) (v + 1) = c
+@smul_mem_SAT : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)], 5 ≤ m → ∀ {x : A m}, x ∈ K m → ↑m • x ∈ SAT m
+@finrank_K : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)], 5 ≤ m → Module.finrank ℤ ↥(K m) = 9 * m - 7
+@index_SAT : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)],
+  5 ≤ m → (Submodule.comap (K m).subtype (SAT m)).toAddSubgroup.index = m ^ 12
+'Watermark.smul_mem_SAT' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Watermark.finrank_K' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Watermark.index_SAT' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Watermark.fib_overlap_zero_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1703808 t=138s

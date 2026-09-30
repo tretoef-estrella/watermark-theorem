@@ -1,0 +1,45 @@
+@sum_pencil_mul_pencil : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)] {π π' : Option (ZMod m)},
+  π ≠ π' → ∀ (u v : ZMod m → ℤ), ∑ p, u (pencil π p) * v (pencil π' p) = (∑ x, u x) * ∑ x, v x
+@sum_pencil_mul_same : ∀ {m : ℕ} [inst : NeZero m] (π : Option (ZMod m)) (u v : ZMod m → ℤ),
+  ∑ p, u (pencil π p) * v (pencil π p) = ↑m * ∑ x, u x * v x
+@gram_mulVec_pb_axis_some_zero : ∀ {m : ℕ} [inst : NeZero m] (j : Fin 3) {u : ZMod m → ℤ},
+  u ∈ sumZero ℤ m → (gram m).mulVec (pb j (some 0) u) = 0
+@gram_mulVec_pb_axis_none : ∀ {m : ℕ} [inst : NeZero m] (j : Fin 3) {u : ZMod m → ℤ},
+  u ∈ sumZero ℤ m → (gram m).mulVec (pb j none u) = 0
+@gram_mulVec_pb_live : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)] (j : Fin 3) {t : ZMod m},
+  t ≠ 0 →
+    t ≠ 1 → t ≠ -1 → ∀ {u : ZMod m → ℤ}, u ∈ sumZero ℤ m → (gram m).mulVec (pb j (some t) u) = -↑m • pb j (some t) u
+@gram_mulVec_pb_zero_neg_one : ∀ {m : ℕ} [inst : NeZero m],
+  Odd m →
+    ∀ {u : ZMod m → ℤ},
+      u ∈ sumZero ℤ m → (gram m).mulVec (pb 0 (some (-1)) u) = -↑m • pb 0 (some (-1)) u + ↑m • pb 1 (some (-1)) u
+@gram_mulVec_pb_one_neg_one : ∀ {m : ℕ} [inst : NeZero m],
+  Odd m →
+    ∀ {u : ZMod m → ℤ},
+      u ∈ sumZero ℤ m → (gram m).mulVec (pb 1 (some (-1)) u) = -↑m • pb 1 (some (-1)) u + ↑m • pb 0 (some (-1)) u
+@gram_mulVec_pb_one_one : ∀ {m : ℕ} [inst : NeZero m],
+  Odd m →
+    ∀ {u : ZMod m → ℤ},
+      u ∈ sumZero ℤ m → (gram m).mulVec (pb 1 (some 1) u) = -↑m • pb 1 (some 1) u + ↑m • pb 2 (some 1) u
+@gram_mulVec_pb_two_one : ∀ {m : ℕ} [inst : NeZero m],
+  Odd m →
+    ∀ {u : ZMod m → ℤ},
+      u ∈ sumZero ℤ m → (gram m).mulVec (pb 2 (some 1) u) = -↑m • pb 2 (some 1) u + ↑m • pb 1 (some 1) u
+@gram_mulVec_pb_zero_one : ∀ {m : ℕ} [inst : NeZero m],
+  Odd m →
+    ∀ {u : ZMod m → ℤ},
+      u ∈ sumZero ℤ m →
+        (gram m).mulVec (pb 0 (some 1) u) = -↑m • pb 0 (some 1) u + ↑m • pb 2 (some (-1)) fun x => u (x - 1)
+@gram_mulVec_pb_two_neg_one : ∀ {m : ℕ} [inst : NeZero m],
+  Odd m →
+    ∀ {u : ZMod m → ℤ},
+      u ∈ sumZero ℤ m →
+        (gram m).mulVec (pb 2 (some (-1)) u) = -↑m • pb 2 (some (-1)) u + ↑m • pb 0 (some 1) fun x => u (x + 1)
+@smul_ext_eq_sum_pb_fib : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)] (j : Fin 3) (y : Point m → ℤ),
+  ↑m • ext j y = ∑ π, pb j π (fib π y) - (∑ p, y p) • famVec m j
+'Watermark.gram_mulVec_pb_live' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Watermark.gram_mulVec_pb_zero_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Watermark.gram_mulVec_pb_two_neg_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Watermark.smul_ext_eq_sum_pb_fib' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Watermark.sum_pencil_mul_pencil' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=2479968 t=92s

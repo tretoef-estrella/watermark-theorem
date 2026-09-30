@@ -1,0 +1,14 @@
+@watermark_theorem : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)],
+  5 ≤ m →
+    Module.Free ℤ (V m) ∧
+      Module.finrank ℤ (V m) = 3 * (m - 1) * (m - 2) + 1 ∧
+        ∀ {ι : Type u_1} [inst_1 : Fintype ι] [inst_2 : DecidableEq ι] (b : Module.Basis ι ℤ (V m)),
+          ((LinearMap.BilinForm.toMatrix b) (formV m)).det = ↑m ^ (3 * (m - 3) ^ 2)
+@V_free : ∀ {m : ℕ} [inst : NeZero m], Module.Free ℤ (V m)
+@finrank_V : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)], 5 ≤ m → Module.finrank ℤ (V m) = 3 * (m - 1) * (m - 2) + 1
+@[reducible] def Watermark.V : (m : ℕ) → [NeZero m] → Type :=
+fun m [NeZero m] => A m ⧸ K m
+def Watermark.formV : (m : ℕ) → [inst : NeZero m] → LinearMap.BilinForm ℤ (V m) :=
+fun m [NeZero m] => (K m).liftQ (gramFormAux m).flip ⋯
+'Watermark.watermark_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1587200 t=139s
