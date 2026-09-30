@@ -1,0 +1,4 @@
+m=5: 75 lines, 2850 pairs, mismatches 0 -> MATCH; control (shift -1) mismatches 250
+m=7: 147 lines, 10878 pairs, mismatches 0 -> MATCH; control (shift -1) mismatches 686
+m=11: 363 lines, 66066 pairs, mismatches 0 -> MATCH; control (shift -1) mismatches 2662
+VIGIA-FIN-OK exit=0 pico_kb=20752 t=2s

@@ -1,0 +1,4 @@
+m=5: det Gram_F = +m^84 (rest 1)
+m=7: det Gram_F = +m^198 (rest 1)
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=21136 t=2s

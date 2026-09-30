@@ -1,0 +1,4 @@
+m=5: #F=37 #SAT=38 total=75 (3m^2=75); [A : F+SAT] = m^48 * 1  (predicted m^48)
+m=7: #F=91 #SAT=56 total=147 (3m^2=147); [A : F+SAT] = m^87 * 1  (predicted m^87)
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=21376 t=0s
