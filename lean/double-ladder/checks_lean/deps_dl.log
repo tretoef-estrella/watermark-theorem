@@ -1,0 +1,25 @@
+project decls in cone: 609; modules: 11
+RequestProject.DoubleLadder.DL1 47
+RequestProject.DoubleLadder.DL2 96
+RequestProject.DoubleLadder.DL3 47
+RequestProject.Watermark.Defs 38
+RequestProject.Watermark.W1 34
+RequestProject.Watermark.W2 81
+RequestProject.Watermark.W3 38
+RequestProject.Watermark.W4 31
+RequestProject.Watermark.W5 50
+RequestProject.Watermark.W6 103
+RequestProject.Watermark.W7 44
+project decls in cone: 632; modules: 11
+RequestProject.DoubleLadder.DL1 47
+RequestProject.DoubleLadder.DL2 125
+RequestProject.DoubleLadder.DL3 41
+RequestProject.Watermark.Defs 38
+RequestProject.Watermark.W1 34
+RequestProject.Watermark.W2 81
+RequestProject.Watermark.W3 38
+RequestProject.Watermark.W4 31
+RequestProject.Watermark.W5 50
+RequestProject.Watermark.W6 103
+RequestProject.Watermark.W7 44
+VIGIA-FIN-OK exit=0 pico_kb=2575104 t=106s
