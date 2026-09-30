@@ -1,0 +1,36 @@
+@watermark_theorem : ∀ {m : ℕ} [inst : Fact (Nat.Prime m)],
+  5 ≤ m →
+    Module.Free ℤ (V m) ∧
+      Module.finrank ℤ (V m) = 3 * (m - 1) * (m - 2) + 1 ∧
+        ∀ {ι : Type u_1} [inst_1 : Fintype ι] [inst_2 : DecidableEq ι] (b : Module.Basis ι ℤ (V m)),
+          ((LinearMap.BilinForm.toMatrix b) (formV m)).det = ↑m ^ (3 * (m - 3) ^ 2)
+'Watermark.watermark_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+@[reducible] def Watermark.Point : ℕ → Type :=
+fun m => ZMod m × ZMod m
+@[reducible] def Watermark.Line : ℕ → Type :=
+fun m => Fin 3 × Point m
+def Watermark.gramUpper : (m : ℕ) → Line m → Line m → ℤ :=
+fun m p q =>
+  if p.1 = q.1 then if p.2 = q.2 then 2 - ↑m else if p.2.1 = q.2.1 ∨ p.2.2 = q.2.2 then 1 else 0
+  else
+    if p.1 = 0 ∧ q.1 = 1 then if p.2.1 - p.2.2 = q.2.1 - q.2.2 then 1 else 0
+    else
+      if p.1 = 1 ∧ q.1 = 2 then if p.2.1 + p.2.2 = q.2.1 + q.2.2 then 1 else 0
+      else if p.1 = 0 ∧ q.1 = 2 then if q.2.1 - q.2.2 = p.2.1 + p.2.2 + 1 then 1 else 0 else 0
+def Watermark.gram : (m : ℕ) → Matrix (Line m) (Line m) ℤ :=
+fun m => Matrix.of fun p q => if p.1 ≤ q.1 then gramUpper m p q else gramUpper m q p
+@[reducible] def Watermark.A : ℕ → Type :=
+fun m => Line m → ℤ
+def Watermark.gramLin : (m : ℕ) → [NeZero m] → A m →ₗ[ℤ] A m :=
+fun m [NeZero m] => (gram m).mulVecLin
+def Watermark.K : (m : ℕ) → [NeZero m] → Submodule ℤ (A m) :=
+fun m [NeZero m] => (gramLin m).ker
+@[reducible] def Watermark.V : (m : ℕ) → [NeZero m] → Type :=
+fun m [NeZero m] => A m ⧸ K m
+def Watermark.gramForm : (m : ℕ) → [NeZero m] → LinearMap.BilinForm ℤ (A m) :=
+fun m [NeZero m] => (Matrix.toLinearMap₂' ℤ) (gram m)
+def Watermark.gramFormAux : (m : ℕ) → [inst : NeZero m] → V m →ₗ[ℤ] A m →ₗ[ℤ] ℤ :=
+fun m [NeZero m] => (K m).liftQ (gramForm m).flip ⋯
+def Watermark.formV : (m : ℕ) → [inst : NeZero m] → LinearMap.BilinForm ℤ (V m) :=
+fun m [NeZero m] => (K m).liftQ (gramFormAux m).flip ⋯
+VIGIA-FIN-OK exit=0 pico_kb=1881504 t=139s
