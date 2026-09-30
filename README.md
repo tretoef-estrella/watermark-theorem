@@ -4,6 +4,8 @@
 
 **Rafael Amichis Luengo** · Madrid · tretoef@gmail.com
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23062529.svg)](https://doi.org/10.5281/zenodo.23062529)
+
 > **Status.**
 > - **Proved.** The Watermark Theorem was proved in June 2026. The Double Ladder Theorem was proved for every prime on 30 September 2026, by the short integral argument that the Lean proof follows.
 > - **Verified in Lean.** Both are certified in Lean 4 with Mathlib (30 September 2026): no `sorry`, and only the three standard axioms. An independent cold reading of the Double Ladder certificate found no fatal error and no gap.
@@ -133,3 +135,7 @@ CITATION.cff · LICENSE · LICENSE-TEXT.md
 ## Licence and citation
 
 The code is under the MIT licence ([LICENSE](LICENSE)). The texts are under CC BY 4.0 ([LICENSE-TEXT.md](LICENSE-TEXT.md)). How to cite: [CITATION.cff](CITATION.cff).
+
+This repository, the two papers, the two certificates, the pencil proof and the story are archived on Zenodo: [doi.org/10.5281/zenodo.23062529](https://doi.org/10.5281/zenodo.23062529).
+
+*Cite as:* Amichis Luengo, R. (2026). *The Watermark and Double Ladder Theorems (Verified in Lean)*. Zenodo. https://doi.org/10.5281/zenodo.23062529

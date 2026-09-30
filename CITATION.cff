@@ -7,6 +7,15 @@ authors:
     given-names: "Rafael"
     email: "tretoef@gmail.com"
     affiliation: "Independent researcher, Madrid, Spain"
+    orcid: "https://orcid.org/0009-0008-6252-675X"
+doi: 10.5281/zenodo.23062529
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23062529
+    description: "Zenodo record, all versions (concept DOI)"
+  - type: doi
+    value: 10.5281/zenodo.23062530
+    description: "Zenodo record, version 1"
 repository-code: "https://github.com/tretoef-estrella/watermark-theorem"
 license:
   - MIT
