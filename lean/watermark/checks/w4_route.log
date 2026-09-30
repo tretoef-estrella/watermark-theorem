@@ -1,0 +1,10 @@
+m=5: G on pullbacks (axis 0, live non-overlap -m, six overlap formulas): False
+m=5: [Z^P : L_j] = m^16 * 1  (predicted m^16)
+m=5: rank F = 37 (3(m-1)(m-2)+1 = 37); |disc B|_F| = m^84 * 1  (predicted m^84)
+m=7: G on pullbacks (axis 0, live non-overlap -m, six overlap formulas): False
+m=7: [Z^P : L_j] = m^29 * 1  (predicted m^29)
+m=7: rank F = 91 (3(m-1)(m-2)+1 = 91); |disc B|_F| = m^198 * 1  (predicted m^198)
+m=11: G on pullbacks (axis 0, live non-overlap -m, six overlap formulas): False
+m=11: [Z^P : L_j] = m^67 * 1  (predicted m^67)
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=24752 t=3s

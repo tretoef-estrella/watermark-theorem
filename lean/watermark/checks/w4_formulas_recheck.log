@@ -1,0 +1,5 @@
+m=5: all W4 formulas on a basis of Z0: True; control (swapped shift) holds: False
+m=7: all W4 formulas on a basis of Z0: True; control (swapped shift) holds: False
+m=11: all W4 formulas on a basis of Z0: True; control (swapped shift) holds: False
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=23424 t=1s

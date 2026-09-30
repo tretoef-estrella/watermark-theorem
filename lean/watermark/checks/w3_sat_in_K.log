@@ -1,0 +1,10 @@
+m=3: basis in K: True; 20 random admissible data in K: True; rank_Q=20 (9m-7=20); control non-sum-zero in K: False
+m=4: basis in K: True; 20 random admissible data in K: True; rank_Q=28 (9m-7=29); control non-sum-zero in K: False
+m=5: basis in K: True; 20 random admissible data in K: True; rank_Q=38 (9m-7=38); control non-sum-zero in K: False
+m=6: basis in K: True; 20 random admissible data in K: True; rank_Q=46 (9m-7=47); control non-sum-zero in K: False
+m=7: basis in K: True; 20 random admissible data in K: True; rank_Q=56 (9m-7=56); control non-sum-zero in K: False
+m=9: basis in K: True; 20 random admissible data in K: True; rank_Q=74 (9m-7=74); control non-sum-zero in K: False
+m=11: basis in K: True; 20 random admissible data in K: True; rank_Q=92 (9m-7=92); control non-sum-zero in K: False
+m=15: basis in K: True; 20 random admissible data in K: True; rank_Q=128 (9m-7=128); control non-sum-zero in K: False
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=30720 t=0s
