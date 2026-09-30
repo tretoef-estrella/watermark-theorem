@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below. The surname is Amichis Luengo (two surnames, in this order)."
+title: "The Watermark and Double Ladder Theorems (Verified in Lean)"
+type: software
+authors:
+  - family-names: "Amichis Luengo"
+    given-names: "Rafael"
+    email: "tretoef@gmail.com"
+    affiliation: "Independent researcher, Madrid, Spain"
+repository-code: "https://github.com/tretoef-estrella/watermark-theorem"
+license:
+  - MIT
+  - CC-BY-4.0
+date-released: 2026-09-30
+abstract: "For the complex Fermat surface of prime degree m >= 5, the lattice spanned by its 3m^2 lines has discriminant m^(3(m-3)^2) (the Watermark Theorem) and discriminant group (Z/m)^(3m^2-24m+59) x (Z/m^2)^(3m-16) for m >= 7, (Z/5)^10 x Z/25 for m = 5 (the Double Ladder Theorem). Both are proved, and certified in Lean 4 with Mathlib."
+keywords:
+  - Fermat surface
+  - Néron–Severi lattice
+  - discriminant
+  - discriminant group
+  - lines on surfaces
+  - Lean 4
+  - Mathlib
+  - formal verification
