@@ -1,0 +1,5 @@
+m=5: n=75 profile(val:count)={0: 26, 1: 10, 2: 1, '>=4': 38}  rank mod m=26 (12(m-3)=24)  a=10 (3m^2-24m+59=14)  b=1 (3m-16=-1)  kernel-part expected 9m-7=38
+m=7: n=147 profile(val:count)={0: 48, 1: 38, 2: 5, '>=4': 56}  rank mod m=48 (12(m-3)=48)  a=38 (3m^2-24m+59=38)  b=5 (3m-16=5)  kernel-part expected 9m-7=56
+m=11: n=363 profile(val:count)={0: 96, 1: 158, 2: 17, '>=4': 92}  rank mod m=96 (12(m-3)=96)  a=158 (3m^2-24m+59=158)  b=17 (3m-16=17)  kernel-part expected 9m-7=92
+m=13: n=507 profile(val:count)={0: 120, 1: 254, 2: 23, '>=4': 110}  rank mod m=120 (12(m-3)=120)  a=254 (3m^2-24m+59=254)  b=23 (3m-16=23)  kernel-part expected 9m-7=110
+VIGIA-FIN-OK exit=0 pico_kb=54976 t=1s
