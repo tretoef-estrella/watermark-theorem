@@ -1,0 +1,11 @@
+n=12 p=3 k=6 N=14 r=13 |G|=p^13  alpha=2731 B=1716 t=1015 kappa=11  M=19
+   [maxrss 21 MB after enumeration]
+   [maxrss 452 MB after eval_matrix]
+   [maxrss 480 MB after smith]
+delta_B = 7916   (matrix (8192, 3432), pivots 3432/3432 full=True, max valuation 3 < M=19; histogram {0: 14, 1: 350, 2: 1638, 3: 1430})
+   (Hilbert function stopped at degree 6 : matrix too large)
+   [maxrss 1065 MB after hilbert]
+   Hilbert function of the points [B] (incomplete): [1, 13, 78, 286, 715, 1287, None]
+Thm2(ii)  E = 1 + kappa*B - 2*delta_B = 3045
+COLD-DONE
+VIGIA-FIN-OK exit=0 pico_kb=1181696 t=342s

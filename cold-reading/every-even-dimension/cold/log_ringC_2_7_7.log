@@ -1,0 +1,6 @@
+k=2 p=7 char=7  dim=1860  top degree=15 (expected 15)
+a(i) = {1, 5, 15, 34, 65, 110, 164, 216, 250, 261, 245, 200, 145, 89, 45, 15}
+h(j) = {1, 5, 15, 34, 65, 110, 165, 221, 265, 295, 310}  B=310
+E first form = 2043   E second form = 2043
+COLD-DONE
+VIGIA-FIN-OK exit=0 pico_kb=81408 t=0s

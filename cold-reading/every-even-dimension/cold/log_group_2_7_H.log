@@ -1,0 +1,5 @@
+(n,m)=(2,7) mode=H: orbits Y1=15 Y2=16; characters |Y1|=90 |Y2|=96; rank of the lattice = 91
+  prime 7: delta(A_Y) = 140, delta(A_Y1 x A_Y2) = 92, v_7|group| = 48
+  prime 7: cyclic factors (Z/7)^38 x (Z/49)^5
+COLD-DONE
+VIGIA-FIN-OK exit=0 pico_kb=75984 t=0s

@@ -1,0 +1,6 @@
+k=5 p=3 char=3  dim=924  top degree=6 (expected 6)
+a(i) = {1, 11, 54, 154, 275, 297, 132}
+h(j) = {1, 11, 55, 165, 330, 462}  B=462
+E first form = 663   E second form = 663
+COLD-DONE
+VIGIA-FIN-OK exit=0 pico_kb=81536 t=0s

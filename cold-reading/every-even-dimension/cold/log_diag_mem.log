@@ -1,0 +1,7 @@
+start 30.5
+after product 37.453125 int64 6.9358062744140625
+after mod 44.40625
+after sub 51.359375
+after fancy 58.328125
+after 50 iterations 79.390625
+VIGIA-FIN-OK exit=0 pico_kb=81296 t=0s

@@ -1,0 +1,24 @@
+n=10 p=3 k=5 N=12 r=11 |G|=p^11  alpha=683 B=462 t=221 kappa=9  M=19
+   [maxrss 21 MB after enumeration]
+   [maxrss 64 MB after eval_matrix]
+   [maxrss 74 MB after smith]
+delta_A = 3074   (matrix (2048, 1366), pivots 1366/1366 full=True, max valuation 5 < M=19; histogram {0: 12, 1: 209, 2: 637, 3: 442, 4: 65, 5: 1})
+   (Hilbert function stopped at degree 7 : matrix too large)
+   [maxrss 430 MB after hilbert]
+   Hilbert function of the points [A] (incomplete): [1, 11, 55, 166, 341, 517, 628, None]
+   [maxrss 430 MB after eval_matrix]
+   [maxrss 430 MB after smith]
+delta_B = 1748   (matrix (2048, 924), pivots 924/924 full=True, max valuation 3 < M=19; histogram {0: 12, 1: 208, 2: 572, 3: 132})
+   [maxrss 430 MB after hilbert]
+   Hilbert function of the points [B]: [1, 11, 55, 165, 330, 462]   sum_j(|[Y]|-h(j)) = 1748   equal to delta: True
+   [maxrss 430 MB after eval_matrix]
+   [maxrss 430 MB after smith]
+delta_T = 663   (matrix (2048, 442), pivots 442/442 full=True, max valuation 3 < M=19; histogram {0: 12, 1: 209, 2: 209, 3: 12})
+   [maxrss 430 MB after hilbert]
+   Hilbert function of the points [T]: [1, 11, 55, 166, 210, 220, 221]   sum_j(|[Y]|-h(j)) = 663   equal to delta: True
+Thm2(i)   2*delta_A - 1 - kappa*alpha = 0
+Thm2(ii)  E = 1 + kappa*B - 2*delta_B = 663
+Thm2(iii) E = kappa*t - 2*delta_T     = 663
+Thm2(iv)  E = delta_A - delta_B - delta_T = 663
+COLD-DONE
+VIGIA-FIN-OK exit=0 pico_kb=440448 t=24s

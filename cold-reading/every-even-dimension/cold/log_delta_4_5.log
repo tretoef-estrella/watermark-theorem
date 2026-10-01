@@ -1,0 +1,13 @@
+n=4 p=5 k=2 N=6 r=5 |G|=p^5  alpha=205 B=100 t=105 kappa=11  M=13
+delta_A = 1128   (matrix (1024, 820), pivots 820/820 full=True, max valuation 3 < M=13; histogram {0: 56, 1: 421, 2: 322, 3: 21})
+   Hilbert function of the points [A]: [1, 5, 15, 35, 65, 102, 140, 170, 190, 200, 204, 205]   sum_j(|[Y]|-h(j)) = 1128   equal to delta: True
+delta_B = 399   (matrix (1024, 400), pivots 400/400 full=True, max valuation 2 < M=13; histogram {0: 55, 1: 291, 2: 54})
+   Hilbert function of the points [B]: [1, 5, 15, 34, 60, 86, 100]   sum_j(|[Y]|-h(j)) = 399   equal to delta: True
+delta_T = 426   (matrix (1024, 420), pivots 420/420 full=True, max valuation 2 < M=13; histogram {0: 56, 1: 302, 2: 62})
+   Hilbert function of the points [T]: [1, 5, 15, 35, 65, 89, 100, 104, 105]   sum_j(|[Y]|-h(j)) = 426   equal to delta: True
+Thm2(i)   2*delta_A - 1 - kappa*alpha = 0
+Thm2(ii)  E = 1 + kappa*B - 2*delta_B = 303
+Thm2(iii) E = kappa*t - 2*delta_T     = 303
+Thm2(iv)  E = delta_A - delta_B - delta_T = 303
+COLD-DONE
+VIGIA-FIN-OK exit=0 pico_kb=174032 t=7s

@@ -1,0 +1,10 @@
+n=4 p=7 k=2 N=6 r=5 |G|=p^5  alpha=1111 B=310 t=801 kappa=19  M=11
+   [maxrss 21 MB after enumeration]
+   [maxrss 169 MB after eval_matrix]
+   [maxrss 180 MB after smith]
+delta_B = 1924   (matrix (7776, 1860), pivots 1860/1860 full=True, max valuation 2 < M=11; histogram {0: 230, 1: 1336, 2: 294})
+   [maxrss 180 MB after hilbert]
+   Hilbert function of the points [B]: [1, 5, 15, 34, 65, 110, 165, 221, 265, 295, 310]   sum_j(|[Y]|-h(j)) = 1924   equal to delta: True
+Thm2(ii)  E = 1 + kappa*B - 2*delta_B = 2043
+COLD-DONE
+VIGIA-FIN-OK exit=0 pico_kb=184336 t=76s

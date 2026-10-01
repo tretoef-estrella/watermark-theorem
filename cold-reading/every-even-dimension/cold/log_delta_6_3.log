@@ -1,0 +1,13 @@
+n=6 p=3 k=3 N=8 r=7 |G|=p^7  alpha=43 B=35 t=8 kappa=5  M=19
+delta_A = 108   (matrix (128, 86), pivots 86/86 full=True, max valuation 3 < M=19; histogram {0: 8, 1: 49, 2: 28, 3: 1})
+   Hilbert function of the points [A]: [1, 7, 21, 36, 42, 43]   sum_j(|[Y]|-h(j)) = 108   equal to delta: True
+delta_B = 76   (matrix (128, 70), pivots 70/70 full=True, max valuation 2 < M=19; histogram {0: 8, 1: 48, 2: 14})
+   Hilbert function of the points [B]: [1, 7, 21, 35]   sum_j(|[Y]|-h(j)) = 76   equal to delta: True
+delta_T = 8   (matrix (128, 16), pivots 16/16 full=True, max valuation 1 < M=19; histogram {0: 8, 1: 8})
+   Hilbert function of the points [T]: [1, 7, 8]   sum_j(|[Y]|-h(j)) = 8   equal to delta: True
+Thm2(i)   2*delta_A - 1 - kappa*alpha = 0
+Thm2(ii)  E = 1 + kappa*B - 2*delta_B = 24
+Thm2(iii) E = kappa*t - 2*delta_T     = 24
+Thm2(iv)  E = delta_A - delta_B - delta_T = 24
+COLD-DONE
+VIGIA-FIN-OK exit=0 pico_kb=6432 t=0s

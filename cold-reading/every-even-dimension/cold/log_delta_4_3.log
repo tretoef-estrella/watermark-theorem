@@ -1,0 +1,13 @@
+n=4 p=3 k=2 N=6 r=5 |G|=p^5  alpha=11 B=10 t=1 kappa=3  M=19
+delta_A = 17   (matrix (32, 22), pivots 22/22 full=True, max valuation 2 < M=19; histogram {0: 6, 1: 15, 2: 1})
+   Hilbert function of the points [A]: [1, 5, 10, 11]   sum_j(|[Y]|-h(j)) = 17   equal to delta: True
+delta_B = 14   (matrix (32, 20), pivots 20/20 full=True, max valuation 1 < M=19; histogram {0: 6, 1: 14})
+   Hilbert function of the points [B]: [1, 5, 10]   sum_j(|[Y]|-h(j)) = 14   equal to delta: True
+delta_T = 0   (matrix (32, 2), pivots 2/2 full=True, max valuation 0 < M=19; histogram {0: 2})
+   Hilbert function of the points [T]: [1]   sum_j(|[Y]|-h(j)) = 0   equal to delta: True
+Thm2(i)   2*delta_A - 1 - kappa*alpha = 0
+Thm2(ii)  E = 1 + kappa*B - 2*delta_B = 3
+Thm2(iii) E = kappa*t - 2*delta_T     = 3
+Thm2(iv)  E = delta_A - delta_B - delta_T = 3
+COLD-DONE
+VIGIA-FIN-OK exit=0 pico_kb=6384 t=0s

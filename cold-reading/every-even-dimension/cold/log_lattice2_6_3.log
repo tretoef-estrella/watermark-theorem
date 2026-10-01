@@ -1,0 +1,7 @@
+n=6 p=3 k=3: 105 matching(s), 8505 standard spaces, modulus p^8
+self-intersection: -5 (expected -5 ); symmetric: True
+rank (p-adic pivots with valuation < 8): 71
+elementary divisors, p-part: 1^56 . 3^7 . 9^7 . 27^1
+v_p(disc) = 24
+COLD-DONE
+VIGIA-FIN-OK exit=0 pico_kb=1035264 t=27s

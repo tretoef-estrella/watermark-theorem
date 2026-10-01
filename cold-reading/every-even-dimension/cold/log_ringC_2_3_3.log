@@ -1,0 +1,6 @@
+k=2 p=3 char=3  dim=20  top degree=3 (expected 3)
+a(i) = {1, 5, 9, 5}
+h(j) = {1, 5, 10}  B=10
+E first form = 3   E second form = 3
+COLD-DONE
+VIGIA-FIN-OK exit=0 pico_kb=81488 t=0s

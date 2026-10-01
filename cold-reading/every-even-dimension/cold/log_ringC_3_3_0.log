@@ -1,0 +1,6 @@
+k=3 p=3 char=0  dim=70  top degree=4 (expected 4)
+a(i) = {1, 7, 20, 28, 14}
+h(j) = {1, 7, 21, 35}  B=35
+E first form = 24   E second form = 24
+COLD-DONE
+VIGIA-FIN-OK exit=0 pico_kb=81456 t=0s

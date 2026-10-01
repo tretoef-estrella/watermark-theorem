@@ -1,0 +1,10 @@
+n=2 p=3 k=1: 3 matching(s), 27 standard spaces
+self-intersection: -1  (expected -1 )
+rank (p-adic pivots with valuation < 19): 7
+elementary divisors, p-part: 1^7
+v_p(disc) = 0
+  prime 2: rank 7, v_2(disc) = 0
+  prime 5: rank 7, v_5(disc) = 0
+  prime 7: rank 7, v_7(disc) = 0
+COLD-DONE
+VIGIA-FIN-OK exit=0 pico_kb=6016 t=0s

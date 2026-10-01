@@ -1,0 +1,5 @@
+(n,m)=(2,4) mode=D: orbits Y1=10 Y2=1; characters |Y1|=19 |Y2|=2; rank of the lattice = 20
+  prime 2: delta(A_Y) = 26, delta(A_Y1 x A_Y2) = 20, v_2|group| = 6
+  prime 2: cyclic factors (Z/8)^2
+COLD-DONE
+VIGIA-FIN-OK exit=0 pico_kb=60160 t=0s

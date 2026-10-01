@@ -1,0 +1,6 @@
+k=1 p=7 char=7  dim=90  top degree=10 (expected 10)
+a(i) = {1, 3, 6, 9, 12, 15, 14, 12, 9, 6, 3}
+h(j) = {1, 3, 6, 9, 12, 15}  B=15
+E first form = 48   E second form = 48
+COLD-DONE
+VIGIA-FIN-OK exit=0 pico_kb=81488 t=0s

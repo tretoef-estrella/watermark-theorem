@@ -1,0 +1,4 @@
+k=3 p=3  HF of S/(generators of Lemma 4.4), degrees 0..7: {1, 7, 21, 35, 35, 35, 35, 35}
+   dim = 1, degree = 35, e_1(x_0..) = 0
+COLD-DONE
+VIGIA-FIN-OK exit=0 pico_kb=81520 t=0s

@@ -1,0 +1,5 @@
+n=10 p=3 k=5 N=12 r=11 |G|=p^11  alpha=683 B=462 t=221 kappa=9  M=19
+   [maxrss 21 MB after enumeration]
+   [maxrss 64 MB after eval_matrix]
+   [maxrss 73 MB after smith]
+VIGIA-MATADO-MEMORIA mem_kb=1360896 t=23s

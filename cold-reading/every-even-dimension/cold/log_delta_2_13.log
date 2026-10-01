@@ -1,0 +1,13 @@
+n=2 p=13 k=1 N=4 r=3 |G|=p^3  alpha=133 B=33 t=100 kappa=21  M=8
+delta_A = 1397   (matrix (1728, 1596), pivots 1596/1596 full=True, max valuation 2 < M=8; histogram {0: 364, 1: 1067, 2: 165})
+   Hilbert function of the points [A]: [1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, 78, 88, 97, 105, 112, 118, 123, 127, 130, 132, 133]   sum_j(|[Y]|-h(j)) = 1397   equal to delta: True
+delta_B = 197   (matrix (1728, 396), pivots 396/396 full=True, max valuation 1 < M=8; histogram {0: 199, 1: 197})
+   Hilbert function of the points [B]: [1, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33]   sum_j(|[Y]|-h(j)) = 197   equal to delta: True
+delta_T = 900   (matrix (1728, 1200), pivots 1200/1200 full=True, max valuation 2 < M=8; histogram {0: 356, 1: 788, 2: 56})
+   Hilbert function of the points [T]: [1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 64, 72, 79, 85, 90, 94, 97, 99, 100]   sum_j(|[Y]|-h(j)) = 900   equal to delta: True
+Thm2(i)   2*delta_A - 1 - kappa*alpha = 0
+Thm2(ii)  E = 1 + kappa*B - 2*delta_B = 300
+Thm2(iii) E = kappa*t - 2*delta_T     = 300
+Thm2(iv)  E = delta_A - delta_B - delta_T = 300
+COLD-DONE
+VIGIA-FIN-OK exit=0 pico_kb=969728 t=37s

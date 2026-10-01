@@ -1,0 +1,5 @@
+(n,m)=(2,5) mode=H: orbits Y1=9 Y2=4; characters |Y1|=36 |Y2|=16; rank of the lattice = 37
+  prime 5: delta(A_Y) = 33, delta(A_Y1 x A_Y2) = 21, v_5|group| = 12
+  prime 5: cyclic factors (Z/5)^10 x (Z/25)^1
+COLD-DONE
+VIGIA-FIN-OK exit=0 pico_kb=61904 t=0s

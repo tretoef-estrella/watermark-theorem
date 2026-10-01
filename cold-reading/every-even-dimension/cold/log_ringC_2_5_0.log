@@ -1,0 +1,6 @@
+k=2 p=5 char=0  dim=400  top degree=9 (expected 9)
+a(i) = {1, 5, 15, 34, 59, 81, 85, 66, 40, 14}
+h(j) = {1, 5, 15, 34, 60, 86, 100}  B=100
+E first form = 303   E second form = 303
+COLD-DONE
+VIGIA-FIN-OK exit=0 pico_kb=81504 t=0s

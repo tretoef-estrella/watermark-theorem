@@ -1,0 +1,6 @@
+k=4 p=3 char=3  dim=252  top degree=5 (expected 5)
+a(i) = {1, 9, 35, 75, 90, 42}
+h(j) = {1, 9, 36, 84, 126}  B=126
+E first form = 135   E second form = 135
+COLD-DONE
+VIGIA-FIN-OK exit=0 pico_kb=81488 t=0s
