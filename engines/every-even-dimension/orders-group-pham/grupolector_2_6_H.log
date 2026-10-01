@@ -1,0 +1,7 @@
+(n,m)=(2,6) mode=H: orbits Y1=43 Y2=10; characters |Y1|=85 |Y2|=20; rank of the lattice = 86
+  prime 2: delta(A_Y) = 116, delta(A_Y1 x A_Y2) = 76, v_2|group| = 40
+  prime 2: cyclic factors (Z/4)^20
+  prime 3: delta(A_Y) = 90, delta(A_Y1 x A_Y2) = 60, v_3|group| = 30
+  prime 3: cyclic factors (Z/3)^9 x (Z/9)^9 x (Z/27)^1
+COLD-DONE
+VIGIA-FIN-OK exit=0 pico_kb=65104 t=0s

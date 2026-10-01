@@ -1,0 +1,16 @@
+# sigma_Y := sum_j (|[Y]| - h_[Y](j)) from the point engine (regla296 h2*_full logs) against the delta invariants of Theorem 2:
+# delta_A = (1+kappa*alpha)/2, delta_B = (1+kappa*B-E)/2, delta_T = (kappa*t-E)/2
+(2,11) sat=True  sigma_A=774 delta_A=774  | sigma_B=134 delta_B=134 | sigma_T=448 delta_T=448   OK
+(2,13) sat=True  sigma_A=1397 delta_A=1397  | sigma_B=197 delta_B=197 | sigma_T=900 delta_T=900   OK
+(2,5) sat=True  sigma_A=33 delta_A=33  | sigma_B=17 delta_B=17 | sigma_T=4 delta_T=4   OK
+(2,7) sat=True  sigma_A=140 delta_A=140  | sigma_B=44 delta_B=44 | sigma_T=48 delta_T=48   OK
+(4,3) sat=True  sigma_A=17 delta_A=17  | sigma_B=14 delta_B=14 | sigma_T=0 delta_T=0   OK
+(4,5) sat=True  sigma_A=1128 delta_A=1128  | sigma_B=399 delta_B=399 | sigma_T=426 delta_T=426   OK
+(4,7) sat=True  sigma_A=10555 delta_A=10555  | sigma_B=1924 delta_B=1924 | sigma_T=6588 delta_T=6588   OK
+(6,3) sat=True  sigma_A=108 delta_A=108  | sigma_B=76 delta_B=76 | sigma_T=8 delta_T=8   OK
+(8,3) sat=True  sigma_A=599 delta_A=599  | sigma_B=374 delta_B=374 | sigma_T=90 delta_T=90   OK
+(10,3) sat=True  sigma_A=3074 delta_A=3074  | sigma_B=1748 delta_B=1748 | sigma_T=663 delta_T=663   OK
+(12,3) sat=True  sigma_A=15021 delta_A=15021  | sigma_B=7916 delta_B=7916 | sigma_T=4060 delta_T=4060   OK
+(4,11) sat=True  sigma_A=159093 delta_A=159093  | sigma_B=11274 delta_B=11274 | sigma_T=132216 delta_T=132216   OK
+(6,5) sat=True  sigma_A=27855 delta_A=27855  | sigma_B=7615 delta_B=7615 | sigma_T=14644 delta_T=14644   OK
+FIN-OK

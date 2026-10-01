@@ -1,0 +1,10 @@
+A orbits 11 delta 17 elem.div. exponents {0: 6, 1: 15, 2: 1}
+B orbits 10 delta 14 elem.div. exponents {0: 6, 1: 14}
+T orbits 1 delta 0 elem.div. exponents {0: 2}
+(n,p)=(4,3) alpha=11 B=10 t=1 c=3
+l = dA-dB-dT = 3
+2dA-(1+c*alpha) = 0  [0 expected: disc H_prim = p]
+E from B-side: 1+c*B-2dB = 3
+E from T-side: c*t-2dT   = 3
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=5968 t=0s

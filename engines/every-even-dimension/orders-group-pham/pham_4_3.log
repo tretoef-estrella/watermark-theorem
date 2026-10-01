@@ -1,0 +1,6 @@
+(n,p)=(4,3)  |A|=22  |B|=20  |T|=2
+H°   : rank, v_p(disc), exponents = (22, 1, {0: 21, 1: 1})
+Hdg° : rank, v_p(disc), exponents = (20, 4, {0: 17, 1: 2, 2: 1})
+T(X) : rank, v_p(disc), exponents = (2, 3, {1: 1, 2: 1})
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=13312 t=0s

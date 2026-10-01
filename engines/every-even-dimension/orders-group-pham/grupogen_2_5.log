@@ -1,0 +1,3 @@
+(n,m)=(2,5)  orbits B=9 T=4  invariants of Z[G]/(I_B+I_T): {1: 5, 5: 10, 25: 1}
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=53200 t=0s

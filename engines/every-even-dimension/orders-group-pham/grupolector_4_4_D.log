@@ -1,0 +1,5 @@
+(n,m)=(4,4) mode=D: orbits Y1=71 Y2=21; characters |Y1|=141 |Y2|=42; rank of the lattice = 142
+  prime 2: delta(A_Y) = 459, delta(A_Y1 x A_Y2) = 333, v_2|group| = 126
+  prime 2: cyclic factors (Z/2)^2 x (Z/4)^4 x (Z/8)^30 x (Z/16)^4 x (Z/32)^2
+COLD-DONE
+VIGIA-FIN-OK exit=0 pico_kb=144944 t=5s

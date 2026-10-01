@@ -1,0 +1,10 @@
+A orbits 683 delta 3074 elem.div. exponents {0: 12, 1: 209, 2: 637, 3: 442, 4: 65, 5: 1}
+B orbits 462 delta 1748 elem.div. exponents {0: 12, 1: 208, 2: 572, 3: 132}
+T orbits 221 delta 663 elem.div. exponents {0: 12, 1: 209, 2: 209, 3: 12}
+(n,p)=(10,3) alpha=683 B=462 t=221 c=9
+l = dA-dB-dT = 663
+2dA-(1+c*alpha) = 0  [0 expected: disc H_prim = p]
+E from B-side: 1+c*B-2dB = 663
+E from T-side: c*t-2dT   = 663
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=61456 t=4s

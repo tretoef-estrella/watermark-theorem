@@ -1,0 +1,10 @@
+A orbits 205 delta 1128 elem.div. exponents {0: 56, 1: 421, 2: 322, 3: 21}
+B orbits 100 delta 399 elem.div. exponents {0: 55, 1: 291, 2: 54}
+T orbits 105 delta 426 elem.div. exponents {0: 56, 1: 302, 2: 62}
+(n,p)=(4,5) alpha=205 B=100 t=105 c=11
+l = dA-dB-dT = 303
+2dA-(1+c*alpha) = 0  [0 expected: disc H_prim = p]
+E from B-side: 1+c*B-2dB = 303
+E from T-side: c*t-2dT   = 303
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=112992 t=1s

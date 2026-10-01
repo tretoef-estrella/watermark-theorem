@@ -1,0 +1,10 @@
+A orbits 133 delta 1397 elem.div. exponents {0: 364, 1: 1067, 2: 165}
+B orbits 33 delta 197 elem.div. exponents {0: 199, 1: 197}
+T orbits 100 delta 900 elem.div. exponents {0: 356, 1: 788, 2: 56}
+(n,p)=(2,13) alpha=133 B=33 t=100 c=21
+l = dA-dB-dT = 300
+2dA-(1+c*alpha) = 0  [0 expected: disc H_prim = p]
+E from B-side: 1+c*B-2dB = 300
+E from T-side: c*t-2dT   = 300
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=322320 t=10s

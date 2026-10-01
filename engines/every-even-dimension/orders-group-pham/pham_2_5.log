@@ -1,0 +1,6 @@
+(n,p)=(2,5)  |A|=52  |B|=36  |T|=16
+H°   : rank, v_p(disc), exponents = (52, 1, {0: 51, 1: 1})
+Hdg° : rank, v_p(disc), exponents = (36, 13, {0: 24, 1: 11, 2: 1})
+T(X) : rank, v_p(disc), exponents = (16, 12, {0: 5, 1: 10, 2: 1})
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=6416 t=0s

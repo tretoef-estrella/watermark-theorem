@@ -1,0 +1,10 @@
+A orbits 31 delta 140 elem.div. exponents {0: 56, 1: 120, 2: 10}
+B orbits 15 delta 44 elem.div. exponents {0: 46, 1: 44}
+T orbits 16 delta 48 elem.div. exponents {0: 48, 1: 48}
+(n,p)=(2,7) alpha=31 B=15 t=16 c=9
+l = dA-dB-dT = 48
+2dA-(1+c*alpha) = 0  [0 expected: disc H_prim = p]
+E from B-side: 1+c*B-2dB = 48
+E from T-side: c*t-2dT   = 48
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=6080 t=0s

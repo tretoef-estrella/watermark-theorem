@@ -1,0 +1,8 @@
+B orbits 1716 delta 7916 elem.div. exponents {0: 14, 1: 350, 2: 1638, 3: 1430}
+(n,p)=(12,3) alpha=2731 B=1716 t=1015 c=11
+l = dA-dB-dT = -7916
+2dA-(1+c*alpha) = -30042  [0 expected: disc H_prim = p]
+E from B-side: 1+c*B-2dB = 3045
+E from T-side: c*t-2dT   = 11165
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=470016 t=45s

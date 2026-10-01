@@ -1,0 +1,8 @@
+B orbits 310 delta 1924 elem.div. exponents {0: 230, 1: 1336, 2: 294}
+(n,p)=(4,7) alpha=1111 B=310 t=801 c=19
+l = dA-dB-dT = -1924
+2dA-(1+c*alpha) = -21110  [0 expected: disc H_prim = p]
+E from B-side: 1+c*B-2dB = 2043
+E from T-side: c*t-2dT   = 15219
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=173328 t=25s

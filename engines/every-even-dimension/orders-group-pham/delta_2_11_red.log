@@ -1,0 +1,10 @@
+A orbits 91 delta 774 elem.div. exponents {0: 220, 1: 606, 2: 84}
+B orbits 27 delta 134 elem.div. exponents {0: 136, 1: 134}
+T orbits 64 delta 448 elem.div. exponents {0: 212, 1: 408, 2: 20}
+(n,p)=(2,11) alpha=91 B=27 t=64 c=17
+l = dA-dB-dT = 192
+2dA-(1+c*alpha) = 0  [0 expected: disc H_prim = p]
+E from B-side: 1+c*B-2dB = 192
+E from T-side: c*t-2dT   = 192
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=126480 t=1s

@@ -1,0 +1,6 @@
+(n,p)=(6,3)  |A|=86  |B|=70  |T|=16
+H°   : rank, v_p(disc), exponents = (86, 1, {0: 85, 1: 1})
+Hdg° : rank, v_p(disc), exponents = (70, 25, {0: 54, 1: 8, 2: 7, 3: 1})
+T(X) : rank, v_p(disc), exponents = (16, 24, {0: 1, 1: 7, 2: 7, 3: 1})
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=22192 t=0s
