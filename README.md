@@ -41,6 +41,39 @@ For `m` prime to 6, the lines generate the Néron–Severi group: Schütt, Shiod
 | 17 | `17^{588}` | `(Z/17)^{518} × (Z/289)^{35}` |
 | 19 | `19^{768}` | `(Z/19)^{686} × (Z/361)^{41}` |
 
+## In every even dimension (1 October 2026)
+
+**[The Watermark in Every Even Dimension](papers/THE_WATERMARK_IN_EVERY_EVEN_DIMENSION.pdf)** ([markdown](papers/THE_WATERMARK_IN_EVERY_EVEN_DIMENSION.md)) · [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23091045.svg)](https://doi.org/10.5281/zenodo.23091045)
+
+A sequel. Let `X` be the Fermat variety of degree `m` and dimension `2k`, `G = μ_m^{2k+2}/μ_m`, and `Hdg(X)` the lattice of integral Hodge classes of middle degree.
+
+> **Theorem 1 (every degree `m ≥ 3`).** `Hdg(X)^∨/Hdg(X) ≅ Z[G]/(I_𝔅 + I_T)`: the discriminant group is the additive group of a finite ring, where `I_𝔅` and `I_T` are the ideals of the elements of `Z[G]` that vanish at the Hodge characters and at the other primitive characters.
+
+> **Theorem 2 (prime degree `p`).** `|disc Hdg(X)| = p^E` with `E = 1 + (2k(p−2) − 1)·B − 2δ`, where `B` is the number of Hodge characters up to scalars and `δ` is the delta invariant of the order `Z_p[G]/I_𝔅`.
+
+> **Theorem 3.** `δ` is the delta invariant of the tangent cone, the cone over the Hodge points of `P^{2k}(F_p)`. So `E = 1 + (2k(p−2) − 1)·B − 2·Σ_i ⌊i/(p−1)⌋·a(i)`, with `a` the Hilbert function of `F_p[x_0, …, x_{2k+1}]/(e_1, e_3, …, e_{2k+1}; x_i^{p−1})`.
+
+> **Theorem 4.** The lattice spanned by the `p^{k+1}` linear spaces of one matching has discriminant `p^{1 + (p−1)^k·(k(p−2) − 1)}`.
+
+For the Fermat cubic of dimension `2k` this gives `|disc Hdg(X)| = 3^{2·4^k + 1 − 3·C(2k+1, k)}`, and for surfaces it returns `3(p−3)²`, the Watermark.
+
+| variety | `disc Hdg(X)` | |
+|---|---|---|
+| Fermat fourfold of degree 5 | `± 5^{303}` | as in Aljovin–Movasati–Villaflor |
+| Fermat fourfold of degree 7 | `± 7^{2043}` | new; also computed from the linear cycles |
+| Fermat fourfold of degree 11 | `± 11^{15603}` | new |
+| Fermat sixfold of degree 5 | `± 5^{5596}` | new |
+| Fermat cubic of dimension 8 | `± 3^{135}`, group `(Z/3)^{34} × (Z/9)^{34} × (Z/27)^{11}` | the exponent agrees with Aljovin–Movasati–Villaflor (who give the primitive lattice); the group is new |
+
+**Status.**
+- **Proved by hand**, not formalized in Lean. The proofs rest on Pham's theorem in the form given by Looijenga (arXiv:1005.1733, Corollary 2.2). Theorem 3 uses, in general, one dimension count that follows from a theorem of Bezrukavnikov, Riche and Rider (arXiv:2005.05583); without it the formula is a lower bound, and the count was checked by machine in 22 cells.
+- **Read cold** by an independent reader before release: «holds with corrections», no fatal error; the corrections are in the text. The report, with the reader's own scripts and logs, is in [cold-reading/every-even-dimension](cold-reading/every-even-dimension).
+- **Checked by seven engines**, against every row of prime degree of the tables of Aljovin, Movasati and Villaflor, at five composite degrees, and at the Fermat sextic surface against Auel, Böhning and Graf von Bothmer: [engines/every-even-dimension](engines/every-even-dimension).
+- **Two conjectures are open:** that the exponent is a polynomial in `p` of degree `k + 1` (given in the note for `k ≤ 7`), and that the transcendental side is also governed by its tangent cone.
+- **Not refereed.**
+
+---
+
 ## What was known before
 
 - **Shioda (1987)** asked, for prime `m`, whether `|det NS| = m^{3(m−3)²}` (Questions 7.2 and 7.4). He asked for the determinant only.
@@ -101,6 +134,9 @@ The empirical law behind it, which includes an even-degree half that is still a 
 
 ```
 papers/                              the two papers: The Watermark Theorem, The Double Ladder Theorem (md and pdf)
+                                     and the sequel, The Watermark in Every Even Dimension (md and pdf)
+engines/every-even-dimension/        the seven engines of the sequel, with their logs
+cold-reading/every-even-dimension/   the cold reading of the sequel: mission, report, the reader's scripts and logs
 HOW_THE_WATERMARK_WAS_FOUND.md/.pdf  the story of the discovery
 lean/                                the Lean 4 proofs
   README.md                          what is where, and how to reproduce it
@@ -131,11 +167,14 @@ CITATION.cff · LICENSE · LICENSE-TEXT.md
 - A. Degtyarev, *Lines generate the Picard groups of certain Fermat surfaces*, J. Number Theory **147** (2015), 454–477.
 - T. Shioda, *Mordell–Weil lattice of higher genus fibration on a Fermat surface*, J. Math. Sci. Univ. Tokyo **22** (2015), 443–468.
 - E. Aljovin, H. Movasati, R. Villaflor, *Integral Hodge conjecture for Fermat varieties*, J. Symbolic Comput. **95** (2019), 177–184.
+- E. Looijenga, *Fermat varieties and the periods of some hypersurfaces*, Adv. Stud. Pure Math. **58** (2010); arXiv:1005.1733.
+- A. Auel, C. Böhning, H.-C. Graf von Bothmer, *The transcendental lattice of the sextic Fermat surface*, Math. Res. Lett. **20** (2013), 1017–1031.
+- R. Bezrukavnikov, S. Riche, L. Rider, *Modular affine Hecke category and regular unipotent centralizer*, arXiv:2005.05583.
 
 ## Licence and citation
 
 The code is under the MIT licence ([LICENSE](LICENSE)). The texts are under CC BY 4.0 ([LICENSE-TEXT.md](LICENSE-TEXT.md)). How to cite: [CITATION.cff](CITATION.cff).
 
-This repository, the two papers, the two certificates, the pencil proof and the story are archived on Zenodo: [doi.org/10.5281/zenodo.23062529](https://doi.org/10.5281/zenodo.23062529).
+This repository, the two papers, the two certificates, the pencil proof and the story are archived on Zenodo: [doi.org/10.5281/zenodo.23062529](https://doi.org/10.5281/zenodo.23062529). The sequel has its own record: [doi.org/10.5281/zenodo.23091045](https://doi.org/10.5281/zenodo.23091045).
 
 *Cite as:* Amichis Luengo, R. (2026). *The Watermark and Double Ladder Theorems (Verified in Lean)*. Zenodo. https://doi.org/10.5281/zenodo.23062529
