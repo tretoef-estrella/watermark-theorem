@@ -1,0 +1,24 @@
+(k,p)=(1,5)  Q=36  top degree 6 (expected 6)  a(top)=3  E = 12   a == Macaulay2: True
+(k,p)=(1,7)  Q=90  top degree 10 (expected 10)  a(top)=3  E = 48   a == Macaulay2: True
+(k,p)=(1,11)  Q=270  top degree 18 (expected 18)  a(top)=3  E = 192   a == Macaulay2: True
+(k,p)=(1,13)  Q=396  top degree 22 (expected 22)  a(top)=3  E = 300   a == Macaulay2: True
+(k,p)=(2,3)  Q=20  top degree 3 (expected 3)  a(top)=5  E = 3   a == Macaulay2: True
+(k,p)=(3,3)  Q=70  top degree 4 (expected 4)  a(top)=14  E = 24   a == Macaulay2: True
+(k,p)=(4,3)  Q=252  top degree 5 (expected 5)  a(top)=42  E = 135   a == Macaulay2: True
+(k,p)=(5,3)  Q=924  top degree 6 (expected 6)  a(top)=132  E = 663   a == Macaulay2: True
+(k,p)=(6,3)  Q=3432  top degree 7 (expected 7)  a(top)=429  E = 3045   a == Macaulay2: True
+(k,p)=(2,5)  Q=400  top degree 9 (expected 9)  a(top)=14  E = 303   a == Macaulay2: True
+(k,p)=(2,7)  Q=1860  top degree 15 (expected 15)  a(top)=15  E = 2043   a == Macaulay2: True
+(k,p)=(2,11)  Q=10900  top degree 27 (expected 27)  a(top)=15  E = 15603   a == Macaulay2: True
+(k,p)=(2,13)  Q=19920  top degree 33 (expected 33)  a(top)=15  E = 30303   a == Macaulay2: True
+(k,p)=(2,17)  Q=50560  top degree 45 (expected 45)  a(top)=15  E = 82743   a == Macaulay2: True
+(k,p)=(2,19)  Q=73620  top degree 51 (expected 51)  a(top)=15  E = 123363   a == Macaulay2: True
+(k,p)=(2,23)  Q=138820  top degree 63 (expected 63)  a(top)=15  E = 240603   a == Macaulay2: True
+(k,p)=(2,29)  Q=295120  top degree 81 (expected 81)  a(top)=15  E = 528063   a == Macaulay2: True
+(k,p)=(2,31)  Q=365700  top degree 87 (expected 87)  a(top)=15  E = 659403   a == Macaulay2: True
+(k,p)=(3,5)  Q=4900  top degree 12 (expected 12)  a(top)=84  E = 5596   a == Macaulay2: True
+(k,p)=(3,7)  Q=44730  top degree 20 (expected 20)  a(top)=104  E = 71368   a == Macaulay2: True
+(k,p)=(3,11)  Q=551950  top degree 36 (expected 36)  a(top)=105  E = 1149592   a == Macaulay2: True
+(k,p)=(4,5)  Q=63504  top degree 15 (expected 15)  a(top)=594  E = 94395   a == Macaulay2: True
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=33456 t=1s

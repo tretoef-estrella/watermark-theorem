@@ -1,0 +1,8 @@
+(n,p)=(4,3)  points: A 11  B 10  T 1
+   j= 0  h_A=1  h_B=1  h_T=1   term=1   E so far=1   t=0.0s
+   j= 1  h_A=5  h_B=5  h_T=1   term=1   E so far=2   t=0.0s
+   j= 2  h_A=10  h_B=10  h_T=1   term=1   E so far=3   t=0.0s
+   j= 3  h_A=11  h_B=10  h_T=1   term=0   E so far=3   t=0.0s
+RESULT (n,p)=(4,3): sum_j [h_B+h_T-h_A] = 3
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=6688 t=0s

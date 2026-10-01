@@ -1,0 +1,9 @@
+(n,p)=(4,5) mode=full  points: A 205  B 100  T 105   m=5
+ h_A = [1, 5, 15, 35, 65, 102, 140, 170, 190, 200, 204, 205]
+ h_B = [1, 5, 15, 34, 60, 86, 100, 100, 100, 100, 100, 100]
+ h_T = [1, 5, 15, 35, 65, 89, 100, 104, 105, 105, 105, 105]
+ term = [1, 5, 15, 34, 60, 73, 60, 34, 15, 5, 1, 0]
+ saturated at J=11: True   palindromic: True   Isp = 14   h_A(m)-h_T(m) = 13
+RESULT full (n,p)=(4,5): E_full = 303   E_short = 303   t=0.0s
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=6496 t=0s

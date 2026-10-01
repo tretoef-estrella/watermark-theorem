@@ -1,0 +1,9 @@
+(n,p)=(8,3) mode=full  points: A 171  B 126  T 45   m=3
+ h_A = [1, 9, 36, 85, 135, 162, 170, 171]
+ h_B = [1, 9, 36, 84, 126, 126, 126, 126]
+ h_T = [1, 9, 36, 44, 45, 45, 45, 45]
+ term = [1, 9, 36, 43, 36, 9, 1, 0]
+ saturated at J=7: True   palindromic: True   Isp = 42   h_A(m)-h_T(m) = 41
+RESULT full (n,p)=(8,3): E_full = 135   E_short = 135   t=0.0s
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=6320 t=0s

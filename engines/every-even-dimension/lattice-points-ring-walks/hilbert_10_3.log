@@ -1,0 +1,11 @@
+(n,p)=(10,3)  points: A 683  B 462  T 221
+   j= 0  h_A=1  h_B=1  h_T=1   term=1   E so far=1   t=0.0s
+   j= 1  h_A=11  h_B=11  h_T=11   term=11   E so far=12   t=0.0s
+   j= 2  h_A=55  h_B=55  h_T=55   term=55   E so far=67   t=0.0s
+   j= 3  h_A=166  h_B=165  h_T=166   term=165   E so far=232   t=0.1s
+   j= 4  h_A=341  h_B=330  h_T=210   term=199   E so far=431   t=0.4s
+   j= 5  h_A=517  h_B=462  h_T=220   term=165   E so far=596   t=1.6s
+   j= 6  h_A=628  h_B=462  h_T=221   term=55   E so far=651   t=4.7s
+   j= 7  h_A=672  h_B=462  h_T=221   term=11   E so far=662   t=10.4s
+   j= 8  h_A=682  h_B=462  h_T=221   term=1   E so far=663   t=20.5s
+VIGIA-MATADO-MEMORIA mem_kb=1260544 t=22s

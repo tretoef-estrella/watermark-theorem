@@ -1,0 +1,14 @@
+(n,p)=(2,7)  points: A 31  B 15  T 16
+   j= 0  h_A=1  h_B=1  h_T=1   term=1   E so far=1   t=0.0s
+   j= 1  h_A=3  h_B=3  h_T=3   term=3   E so far=4   t=0.0s
+   j= 2  h_A=6  h_B=6  h_T=6   term=6   E so far=10   t=0.0s
+   j= 3  h_A=10  h_B=9  h_T=10   term=9   E so far=19   t=0.0s
+   j= 4  h_A=15  h_B=12  h_T=13   term=10   E so far=29   t=0.0s
+   j= 5  h_A=21  h_B=15  h_T=15   term=9   E so far=38   t=0.0s
+   j= 6  h_A=25  h_B=15  h_T=16   term=6   E so far=44   t=0.0s
+   j= 7  h_A=28  h_B=15  h_T=16   term=3   E so far=47   t=0.0s
+   j= 8  h_A=30  h_B=15  h_T=16   term=1   E so far=48   t=0.0s
+   j= 9  h_A=31  h_B=15  h_T=16   term=0   E so far=48   t=0.0s
+RESULT (n,p)=(2,7): sum_j [h_B+h_T-h_A] = 48
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=6096 t=0s

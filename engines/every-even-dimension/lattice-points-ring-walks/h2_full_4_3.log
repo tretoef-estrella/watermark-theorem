@@ -1,0 +1,9 @@
+(n,p)=(4,3) mode=full  points: A 11  B 10  T 1   m=1
+ h_A = [1, 5, 10, 11]
+ h_B = [1, 5, 10, 10]
+ h_T = [1, 1, 1, 1]
+ term = [1, 1, 1, 0]
+ saturated at J=3: True   palindromic: True   Isp = 5   h_A(m)-h_T(m) = 4
+RESULT full (n,p)=(4,3): E_full = 3   E_short = 3   t=0.0s
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=6112 t=0s

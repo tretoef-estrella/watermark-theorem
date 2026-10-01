@@ -1,0 +1,10 @@
+(n,p)=(6,3)  spaces 8505  Gram built in 0.6s  self-int -5
+rows and columns permuted independently, seed 11
+   level p^0: 56 divisors   remaining (8449, 8449)   t=9.6s
+   level p^1: 7 divisors   remaining (8442, 8442)   t=11.3s
+   level p^2: 7 divisors   remaining (8435, 8435)   t=12.9s
+   level p^3: 1 divisors   remaining (8434, 8434)   t=13.8s
+elementary divisors (p-part): 1:56 . 3^1:7 . 3^2:7 . 3^3:1
+rank 71   remaining block zero mod p^(M-levels): True   total p-exponent E = 24
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=629760 t=13s

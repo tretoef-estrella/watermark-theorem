@@ -1,0 +1,21 @@
+(k,p)=(1,7)  Q=90  top degree 10  a(top)=3  E = 48
+(k,p)=(2,5)  Q=400  top degree 9  a(top)=14  E = 303
+(k,p)=(2,7)  Q=1860  top degree 15  a(top)=15  E = 2043
+(k,p)=(2,31)  Q=365700  top degree 87  a(top)=15  E = 659403
+(k,p)=(3,5)  Q=4900  top degree 12  a(top)=84  E = 5596
+(k,p)=(3,7)  Q=44730  top degree 20  a(top)=104  E = 71368
+(k,p)=(3,11)  Q=551950  top degree 36  a(top)=105  E = 1149592
+(k,p)=(3,13)  Q=1281420  top degree 44  a(top)=105  E = 2847484
+(k,p)=(4,5)  Q=63504  top degree 15  a(top)=594  E = 94395
+(k,p)=(4,7)  Q=1172556  top degree 25  a(top)=909  E = 2391135
+(k,p)=(4,11)  Q=32232060  top degree 45  a(top)=945  E = 86168055
+(k,p)=(5,5)  Q=853776  top degree 18  a(top)=4719  E = 1536879
+(k,p)=(5,7)  Q=32496156  top degree 30  a(top)=9449  E = 79402623
+(k,p)=(6,5)  Q=11778624  top degree 21  a(top)=40898  E = 24615997
+(k,p)=(6,7)  Q=936369720  top degree 35  a(top)=112398  E = 2637838973
+(k,p)=(7,5)  Q=165636900  top degree 24  a(top)=379236  E = 390990556
+(k,p)=(7,7)  Q=27770358330  top degree 40  a(top)=1489410  E = 87926798408
+(k,p)=(8,3)  Q=48620  top degree 9  a(top)=4862  E = 58143
+(k,p)=(10,3)  Q=705432  top degree 11  a(top)=58786  E = 1039005
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=4752 t=0s

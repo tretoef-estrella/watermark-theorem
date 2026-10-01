@@ -1,0 +1,10 @@
+(n,p)=(2,5)  points: A 13  B 9  T 4
+   j= 0  h_A=1  h_B=1  h_T=1   term=1   E so far=1   t=0.0s
+   j= 1  h_A=3  h_B=3  h_T=3   term=3   E so far=4   t=0.0s
+   j= 2  h_A=6  h_B=6  h_T=4   term=4   E so far=8   t=0.0s
+   j= 3  h_A=10  h_B=9  h_T=4   term=3   E so far=11   t=0.0s
+   j= 4  h_A=12  h_B=9  h_T=4   term=1   E so far=12   t=0.0s
+   j= 5  h_A=13  h_B=9  h_T=4   term=0   E so far=12   t=0.0s
+RESULT (n,p)=(2,5): sum_j [h_B+h_T-h_A] = 12
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=4640 t=0s

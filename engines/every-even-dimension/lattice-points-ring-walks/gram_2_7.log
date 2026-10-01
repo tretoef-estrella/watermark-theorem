@@ -1,0 +1,8 @@
+(n,p)=(2,7)  spaces 147  Gram built in 0.0s  self-int -5
+   level p^0: 48 divisors   remaining (99, 99)   t=0.0s
+   level p^1: 38 divisors   remaining (61, 61)   t=0.0s
+   level p^2: 5 divisors   remaining (56, 56)   t=0.0s
+elementary divisors (p-part): 1:48 . 7^1:38 . 7^2:5
+rank 91   remaining block zero mod p^(M-levels): True   total p-exponent E = 48
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=6256 t=0s

@@ -1,0 +1,9 @@
+(n,p)=(10,3) mode=full  points: A 683  B 462  T 221   m=4
+ h_A = [1, 11, 55, 166, 341, 517, 628, 672, 682, 683]
+ h_B = [1, 11, 55, 165, 330, 462, 462, 462, 462, 462]
+ h_T = [1, 11, 55, 166, 210, 220, 221, 221, 221, 221]
+ term = [1, 11, 55, 165, 199, 165, 55, 11, 1, 0]
+ saturated at J=9: True   palindromic: True   Isp = 132   h_A(m)-h_T(m) = 131
+RESULT full (n,p)=(10,3): E_full = 663   E_short = 663   t=0.2s
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=6224 t=0s

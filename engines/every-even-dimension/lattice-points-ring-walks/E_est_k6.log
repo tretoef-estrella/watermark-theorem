@@ -1,0 +1,5 @@
+(k,p)=(3,31)  Q=69296850  top degree 116 (expected 116)  a(top)=105  E = 185343112
+(k,p)=(3,37)  Q=148784580  top degree 140 (expected 140)  a(top)=105  E = 405837148
+(k,p)=(4,29)  Q=11260762128  top degree 135 (expected 135)  a(top)=945  E = 39221628555
+(k,p)=(4,31)  Q=16304391180  top degree 145 (expected 145)  a(top)=945  E = 57329943855
+VIGIA-MATADO-MEMORIA mem_kb=1259520 t=118s

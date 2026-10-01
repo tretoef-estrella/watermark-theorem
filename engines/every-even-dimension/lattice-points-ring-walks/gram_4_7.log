@@ -1,0 +1,10 @@
+(n,p)=(4,7)  spaces 5145  Gram built in 0.2s  self-int 31
+   level p^0: 443 divisors   remaining (4702, 4702)   t=31.4s
+   level p^1: 854 divisors   remaining (3848, 3848)   t=80.7s
+   level p^2: 504 divisors   remaining (3344, 3344)   t=98.3s
+   level p^3: 59 divisors   remaining (3285, 3285)   t=99.4s
+   level p^4: 1 divisors   remaining (3284, 3284)   t=99.6s
+elementary divisors (p-part): 1:443 . 7^1:854 . 7^2:504 . 7^3:59 . 7^4:1
+rank 1861   remaining block zero mod p^(M-levels): True   total p-exponent E = 2043
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=456704 t=99s
