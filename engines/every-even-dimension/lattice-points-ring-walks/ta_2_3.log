@@ -1,0 +1,5 @@
+(k,p)=(2,3) char 3:  dim A = 20   top degree 3: a(T') = 5, a(T'+1) = 0
+ a = [1, 5, 9, 5]
+RESULT TA (n,p)=(4,3) char 3: E = 3
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=93504 t=0s

@@ -1,0 +1,5 @@
+(k,p)=(2,5) char 0:  dim A = 400   top degree 9: a(T') = 14, a(T'+1) = 0
+ a = [1, 5, 15, 34, 59, 81, 85, 66, 40, 14]
+RESULT TA (n,p)=(4,5) char 0: E = 303
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=91952 t=0s

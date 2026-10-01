@@ -1,0 +1,12 @@
+(n,p)=(8,3)  points: A 171  B 126  T 45
+   j= 0  h_A=1  h_B=1  h_T=1   term=1   E so far=1   t=0.0s
+   j= 1  h_A=9  h_B=9  h_T=9   term=9   E so far=10   t=0.0s
+   j= 2  h_A=36  h_B=36  h_T=36   term=36   E so far=46   t=0.0s
+   j= 3  h_A=85  h_B=84  h_T=44   term=43   E so far=89   t=0.0s
+   j= 4  h_A=135  h_B=126  h_T=45   term=36   E so far=125   t=0.0s
+   j= 5  h_A=162  h_B=126  h_T=45   term=9   E so far=134   t=0.1s
+   j= 6  h_A=170  h_B=126  h_T=45   term=1   E so far=135   t=0.2s
+   j= 7  h_A=171  h_B=126  h_T=45   term=0   E so far=135   t=0.4s
+RESULT (n,p)=(8,3): sum_j [h_B+h_T-h_A] = 135
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=43632 t=0s

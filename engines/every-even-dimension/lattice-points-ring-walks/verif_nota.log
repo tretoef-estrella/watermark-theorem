@@ -1,0 +1,19 @@
+(2, 5) top degree ok True  B 9  d 3  E 12 12 12
+(2, 7) top degree ok True  B 15  d 3  E 48 48 48
+(2, 11) top degree ok True  B 27  d 3  E 192 192 192
+(2, 13) top degree ok True  B 33  d 3  E 300 300 300
+(4, 3) top degree ok True  B 10  d 5  E 3 3 3
+(6, 3) top degree ok True  B 35  d 14  E 24 24 24
+(8, 3) top degree ok True  B 126  d 42  E 135 135 135
+(10, 3) top degree ok True  B 462  d 132  E 663 663 663
+(12, 3) top degree ok True  B 1716  d 429  E 3045 3045 3045
+(4, 5) top degree ok True  B 100  d 14  E 303 303 303
+(4, 7) top degree ok True  B 310  d 15  E 2043 2043 2043
+(4, 11) top degree ok True  B 1090  d 15  E 15603 15603 15603
+(6, 5) top degree ok True  B 1225  d 84  E 5596 5596 5596
+Proposition 3.1 (h_B from the points == sum a(j-s(p-1)), every degree): 13/13
+a (walk engine) == a (Macaulay2): 13/13
+(O1) symmetric, socle degree 2k(p-2)-2, socle dimension 1: 13/13
+(O2) h_A = h_T below m: 13/13
+(O3) h_A(m) - h_T(m) = d - 1: 13/13
+E_full == 1 - B + 2 sum h: 13/13;  first form == second form: 13/13

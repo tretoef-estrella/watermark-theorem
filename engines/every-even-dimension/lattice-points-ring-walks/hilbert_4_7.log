@@ -1,0 +1,24 @@
+(n,p)=(4,7)  points: A 1111  B 310  T 801
+   j= 0  h_A=1  h_B=1  h_T=1   term=1   E so far=1   t=0.0s
+   j= 1  h_A=5  h_B=5  h_T=5   term=5   E so far=6   t=0.0s
+   j= 2  h_A=15  h_B=15  h_T=15   term=15   E so far=21   t=0.0s
+   j= 3  h_A=35  h_B=34  h_T=35   term=34   E so far=55   t=0.0s
+   j= 4  h_A=70  h_B=65  h_T=70   term=65   E so far=120   t=0.0s
+   j= 5  h_A=126  h_B=110  h_T=126   term=110   E so far=230   t=0.1s
+   j= 6  h_A=205  h_B=165  h_T=205   term=165   E so far=395   t=0.2s
+   j= 7  h_A=306  h_B=221  h_T=306   term=221   E so far=616   t=0.5s
+   j= 8  h_A=425  h_B=265  h_T=425   term=265   E so far=881   t=1.1s
+   j= 9  h_A=555  h_B=295  h_T=541   term=281   E so far=1162   t=2.2s
+   j=10  h_A=686  h_B=310  h_T=641   term=265   E so far=1427   t=3.9s
+   j=11  h_A=805  h_B=310  h_T=716   term=221   E so far=1648   t=6.5s
+   j=12  h_A=906  h_B=310  h_T=761   term=165   E so far=1813   t=10.1s
+   j=13  h_A=985  h_B=310  h_T=785   term=110   E so far=1923   t=14.5s
+   j=14  h_A=1041  h_B=310  h_T=796   term=65   E so far=1988   t=19.7s
+   j=15  h_A=1076  h_B=310  h_T=800   term=34   E so far=2022   t=25.6s
+   j=16  h_A=1096  h_B=310  h_T=801   term=15   E so far=2037   t=31.7s
+   j=17  h_A=1106  h_B=310  h_T=801   term=5   E so far=2042   t=38.3s
+   j=18  h_A=1110  h_B=310  h_T=801   term=1   E so far=2043   t=45.1s
+   j=19  h_A=1111  h_B=310  h_T=801   term=0   E so far=2043   t=52.1s
+RESULT (n,p)=(4,7): sum_j [h_B+h_T-h_A] = 2043
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=710656 t=52s

@@ -1,0 +1,10 @@
+(n,p)=(6,3)  points: A 43  B 35  T 8
+   j= 0  h_A=1  h_B=1  h_T=1   term=1   E so far=1   t=0.0s
+   j= 1  h_A=7  h_B=7  h_T=7   term=7   E so far=8   t=0.0s
+   j= 2  h_A=21  h_B=21  h_T=8   term=8   E so far=16   t=0.0s
+   j= 3  h_A=36  h_B=35  h_T=8   term=7   E so far=23   t=0.0s
+   j= 4  h_A=42  h_B=35  h_T=8   term=1   E so far=24   t=0.0s
+   j= 5  h_A=43  h_B=35  h_T=8   term=0   E so far=24   t=0.0s
+RESULT (n,p)=(6,3): sum_j [h_B+h_T-h_A] = 24
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=6096 t=0s

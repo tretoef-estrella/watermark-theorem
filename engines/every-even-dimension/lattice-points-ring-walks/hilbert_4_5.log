@@ -1,0 +1,16 @@
+(n,p)=(4,5)  points: A 205  B 100  T 105
+   j= 0  h_A=1  h_B=1  h_T=1   term=1   E so far=1   t=0.0s
+   j= 1  h_A=5  h_B=5  h_T=5   term=5   E so far=6   t=0.0s
+   j= 2  h_A=15  h_B=15  h_T=15   term=15   E so far=21   t=0.0s
+   j= 3  h_A=35  h_B=34  h_T=35   term=34   E so far=55   t=0.0s
+   j= 4  h_A=65  h_B=60  h_T=65   term=60   E so far=115   t=0.0s
+   j= 5  h_A=102  h_B=86  h_T=89   term=73   E so far=188   t=0.0s
+   j= 6  h_A=140  h_B=100  h_T=100   term=60   E so far=248   t=0.0s
+   j= 7  h_A=170  h_B=100  h_T=104   term=34   E so far=282   t=0.1s
+   j= 8  h_A=190  h_B=100  h_T=105   term=15   E so far=297   t=0.1s
+   j= 9  h_A=200  h_B=100  h_T=105   term=5   E so far=302   t=0.1s
+   j=10  h_A=204  h_B=100  h_T=105   term=1   E so far=303   t=0.2s
+   j=11  h_A=205  h_B=100  h_T=105   term=0   E so far=303   t=0.3s
+RESULT (n,p)=(4,5): sum_j [h_B+h_T-h_A] = 303
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=27616 t=0s

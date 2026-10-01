@@ -1,0 +1,10 @@
+SUBFAMILY of matchings: [[(0, 1), (2, 3), (4, 5)]]
+(n,p)=(4,5) mode=full  points: A 205  B 16  T 189   m=5
+ h_A = [1, 5, 15, 35, 65, 102, 140, 170, 190, 200, 204, 205]
+ h_B = [1, 3, 6, 10, 13, 15, 16, 16, 16, 16, 16, 16]
+ h_T = [1, 5, 15, 35, 65, 102, 137, 164, 180, 187, 189, 189]
+ term = [1, 3, 6, 10, 13, 15, 13, 10, 6, 3, 1, 0]
+ saturated at J=11: True   palindromic: True   Isp = 14   h_A(m)-h_T(m) = 0
+RESULT full (n,p)=(4,5): E_full = 81   E_short = 68   t=0.0s
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=6464 t=0s

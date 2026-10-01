@@ -1,0 +1,9 @@
+SUBFAMILY of matchings: [[(0, 1), (2, 3), (4, 5)]]
+(n,p)=(4,7)  spaces 343  Gram built in 0.0s  self-int 31
+   level p^0: 17 divisors   remaining (326, 326)   t=0.0s
+   level p^1: 75 divisors   remaining (251, 251)   t=0.0s
+   level p^2: 125 divisors   remaining (126, 126)   t=0.0s
+elementary divisors (p-part): 1:17 . 7^1:75 . 7^2:125
+rank 217   remaining block zero mod p^(M-levels): True   total p-exponent E = 325
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=6304 t=0s

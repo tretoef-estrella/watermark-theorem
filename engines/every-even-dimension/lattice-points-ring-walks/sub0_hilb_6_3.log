@@ -1,0 +1,10 @@
+SUBFAMILY of matchings: [[(0, 1), (2, 3), (4, 5), (6, 7)]]
+(n,p)=(6,3) mode=full  points: A 43  B 8  T 35   m=2
+ h_A = [1, 7, 21, 36, 42, 43]
+ h_B = [1, 4, 7, 8, 8, 8]
+ h_T = [1, 7, 21, 32, 35, 35]
+ term = [1, 4, 7, 4, 1, 0]
+ saturated at J=5: True   palindromic: True   Isp = 14   h_A(m)-h_T(m) = 0
+RESULT full (n,p)=(6,3): E_full = 17   E_short = 4   t=0.0s
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=6592 t=0s

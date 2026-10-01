@@ -1,0 +1,5 @@
+(k,p)=(5,3) char 3:  dim A = 924   top degree 6: a(T') = 132, a(T'+1) = 0
+ a = [1, 11, 54, 154, 275, 297, 132]
+RESULT TA (n,p)=(10,3) char 3: E = 663
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=93408 t=0s

@@ -1,0 +1,18 @@
+(2, 5) T characters 16 orbits 4
+   e3==0,e5==0 : (False, None) chars 16 orbits 4.0
+(2, 7) T characters 96 orbits 16
+   e3==0,e5==0 : (False, None) chars 96 orbits 16.0
+(4, 3) T characters 2 orbits 1
+   e3==0,e5==0 : (False, True) chars 2 orbits 1.0
+(6, 3) T characters 16 orbits 8
+   e3==0,e5==0 : (False, False) chars 16 orbits 8.0
+(8, 3) T characters 90 orbits 45
+   e3==0,e5==0 : (False, False) chars 90 orbits 45.0
+(4, 5) T characters 420 orbits 105
+   e3==0,e5==0 : (False, False) chars 420 orbits 105.0
+(4, 7) T characters 4806 orbits 801
+   e3==0,e5==0 : (False, False) chars 4266 orbits 711.0
+   e3==0,e5==0 : (False, True) chars 180 orbits 30.0
+   e3==0,e5==0 : (True, False) chars 360 orbits 60.0
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=3840 t=0s
