@@ -158,7 +158,7 @@ CITATION.cff · LICENSE · LICENSE-TEXT.md
 
 ## Related work
 
-- *The Chaise Longue Theorem* (the same author): Conjecture 1.2 of Degtyarev–Shimada for the Fermat varieties of every odd degree in every even dimension. Zenodo [10.5281/zenodo.22961150](https://doi.org/10.5281/zenodo.22961150); repository [chaise-longue-theorem](https://github.com/tretoef-estrella/chaise-longue-theorem).
+- *The Chaise Longue Theorem* (the same author): Conjecture 1.2 of Degtyarev–Shimada for the Fermat varieties of every degree in every even dimension (version 12, 4 October 2026; versions 7–10 covered the odd degrees), with its algebraic core verified in Lean 4. Zenodo [10.5281/zenodo.22961150](https://doi.org/10.5281/zenodo.22961150); repository [chaise-longue-theorem](https://github.com/tretoef-estrella/chaise-longue-theorem).
 
 ## References
 
