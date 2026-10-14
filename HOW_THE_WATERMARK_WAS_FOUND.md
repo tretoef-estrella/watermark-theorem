@@ -58,7 +58,7 @@ It fits all twelve rows of AMV's Table 1 (`m = 3, …, 14`) at once, prime power
 
 The literature was then checked against the law, with the sources read in full:
 - **Shioda (1987)**, in *Some observations on Jacobi sums*, asked for the Fermat surface of **prime** degree `m` whether `|det NS| = m^{3(m−3)²}` (Questions 7.2 and 7.4, p. 133). For general `m` he gave divisibility only: the discriminant divides a power of `m`. The odd-prime formula is therefore Shioda's conjecture.
-- **Schütt, Shioda and van Luijk (2010)**, in *Lines on Fermat surfaces*, verified the determinant by computer for every odd `m ≤ 81` (their Remark 4.5, eq. (16), "with exponent as conjectured" by Shioda). They proved that the lines span the Néron–Severi lattice rationally, and in fact integrally when `m` is coprime to 6, with Degtyarev.
+- **Schütt, Shioda and van Luijk (2010)**, in *Lines on Fermat surfaces*, computed by computer, for every odd `m ≤ 81`, the Gram determinant of their rational basis of lines and found `m^{3(m−3)²}` (end of their §4, "with exponent as conjectured" by Shioda); that basis spans the Néron–Severi lattice when `m` is coprime to 6 and `m ≤ 100`. They proved that the lines span the Néron–Severi lattice rationally, and in fact integrally when `m` is coprime to 6, with Degtyarev.
 - **Shioda (2015)**, in *Mordell–Weil lattice of higher genus fibration on a Fermat surface*, still used the formula as expected, not as proved: for `m` prime to 6 it appears inside his Conjecture 23 (§6.5).
 - **Aljovin, Movasati and Villaflor (2019)** gave the method (Gram matrix and Smith normal form) and the tables in which the law was read. Their Table 1 lists, by machine, the elementary divisors of the lattice for every `m ≤ 14`. For the primes `m = 5, 7, 11, 13` their product is `m^{3(m−3)²}`, and the rows already show the group that the Double Ladder describes: `(Z/5)^{10} × Z/25` at `m = 5`, and `7^{38} · 49^{5}`, `11^{158} · 121^{17}`, `13^{254} · 169^{23}` at `m = 7, 11, 13`. They give no general formula and no proof.
 - **The even half** of the law, with its factor `(m/4)³`, appears in none of these sources, nor in Degtyarev's survey. It remains a conjecture, tested blind in three even cells.
@@ -69,7 +69,7 @@ The author chose the name. He first gave the law a playful working name and, the
 
 ## 7. The proof, and Lean
 
-The same night the odd prime half was proved, as the **Watermark Theorem**: for every prime `m ≥ 5`, `|disc V| = m^{3(m−3)²}`. The complete text passed a line-by-line audit with no mathematical gap. Since the lines span the Néron–Severi lattice for such `m`, this answers Shioda's Question 7.4 (formula (7.10)) for the complex Fermat surface of every prime degree `m ≥ 5`, open since 1987. The June proof used the arithmetic of the cyclotomic field.
+The same night the odd prime half was proved, as the **Watermark Theorem**: for every prime `m ≥ 5`, `|disc V| = m^{3(m−3)²}`. The complete text passed a line-by-line audit; two of its steps (the inclusion `SAT ⊆ K` and the rank `9m − 7`) were checked by computer and not written for general `m`, and both are proved for every prime in the integral route below. Since the lines span the Néron–Severi lattice for such `m`, this answers Shioda's Question 7.4 (formula (7.10)) for the complex Fermat surface of every prime degree `m ≥ 5`, open since 1987. The June proof used the arithmetic of the cyclotomic field.
 
 On 30 September 2026 the theorem was **certified in Lean 4**, along a second route that is entirely integral and uses no characters. The formal statement (`Watermark.watermark_theorem`) says that `V` is free of rank `3(m−1)(m−2)+1` and that, for every prime `m ≥ 5` and every basis of `V`, the Gram determinant equals `m^{3(m−3)²}`, with positive sign. The proof depends only on the three standard axioms of Lean's logic. The formal proofs were written by the AI system Aristotle (Harmonic), then compiled and audited independently on the author's machine; the Lean certificate lists every step.
 
@@ -97,3 +97,7 @@ The sequel, the **Double Ladder**, gives the structure of the discriminant group
 4. E. Aljovin, H. Movasati, R. Villaflor, *Integral Hodge conjecture for Fermat varieties*, J. Symbolic Comput. **95** (2019), 177–184. arXiv:1711.02628
 5. T. Shioda, *Mordell–Weil lattice of higher genus fibration on a Fermat surface*, J. Math. Sci. Univ. Tokyo **22** (2015), 443–468.
 6. A. Degtyarev, I. Shimada, *On the topology of projective subspaces in complex Fermat varieties*, J. Math. Soc. Japan **68** (2016), 975–996. arXiv:1405.4683
+
+---
+
+*Corrections of 14 October 2026 (copy attached to the Hexagon deposit of «The Watermark and Double Ladder Theorems»).* Two sentences of the note of 30 September 2026 are corrected here: §5, Schütt–Shioda–van Luijk computed the determinant on their basis of lines, which is the Néron–Severi lattice only when `gcd(m, 6) = 1`; §7, the June proof had two steps checked by computer only. Nothing else is changed.
