@@ -1,0 +1,19 @@
+m=5 n=75 rank G=37  rank K=38 (paper 9m-7=38)
+  rank SAT=38; G*SAT==0: 1
+  C integral: 1; [K:SAT]=|det C| = m^12 (paper 12)
+  [Z^P:L_fam] = m^16 (paper (m^2+m+2)/2=16)
+  rank F=37 (paper 37); F cap K = 0: 1
+  [A:F+K] = m^36 (paper 3(m^2+m+2)/2-12=36); other primes: 1
+  det Gram(F basis c) = 1 m^84 (paper m^84)
+  paper route: det Gram(V) = det Gram_c/[V:phi F]^2 = 1 m^12; paper m^12
+  INDEPENDENT (SNF of G): #nonzero divisors=37, product = m^12, other primes: 1
+m=7 n=147 rank G=91  rank K=56 (paper 9m-7=56)
+  rank SAT=56; G*SAT==0: 1
+  C integral: 1; [K:SAT]=|det C| = m^12 (paper 12)
+  [Z^P:L_fam] = m^29 (paper (m^2+m+2)/2=29)
+  rank F=91 (paper 91); F cap K = 0: 1
+  [A:F+K] = m^75 (paper 3(m^2+m+2)/2-12=75); other primes: 1
+  det Gram(F basis c) = 1 m^198 (paper m^198)
+  paper route: det Gram(V) = det Gram_c/[V:phi F]^2 = 1 m^48; paper m^48
+  INDEPENDENT (SNF of G): #nonzero divisors=91, product = m^48, other primes: 1
+VIGIA-FIN-OK exit=0 pico_kb=36352 t=0s

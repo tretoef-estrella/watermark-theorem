@@ -1,0 +1,13 @@
+m=5: GYG == 6m^2 G: True;  control GYG == 6m G: False
+   min poly x(x+m)(x+2m)(x-3m) kills G: True ; each 3-factor product kills G: [False, False, False, False]
+   Gamma^2 == I: True;  G == S^T Gamma S - mI: True;  control (shift -1): False
+   dim W = rank S mod m = 42 (paper 12m-18=42);  rank(G mod m) = 26 (paper: 26)
+m=7: GYG == 6m^2 G: True;  control GYG == 6m G: False
+   min poly x(x+m)(x+2m)(x-3m) kills G: True ; each 3-factor product kills G: [False, False, False, False]
+   Gamma^2 == I: True;  G == S^T Gamma S - mI: True;  control (shift -1): False
+   dim W = rank S mod m = 66 (paper 12m-18=66);  rank(G mod m) = 48 (paper: 48)
+m=11: GYG == 6m^2 G: True;  control GYG == 6m G: False
+   min poly x(x+m)(x+2m)(x-3m) kills G: True ; each 3-factor product kills G: [False, False, False, False]
+   Gamma^2 == I: True;  G == S^T Gamma S - mI: True;  control (shift -1): False
+   dim W = rank S mod m = 114 (paper 12m-18=114);  rank(G mod m) = 96 (paper: 96)
+VIGIA-FIN-OK exit=0 pico_kb=31520 t=1s

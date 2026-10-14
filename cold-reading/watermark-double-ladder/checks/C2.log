@@ -1,0 +1,11 @@
+m=3: dim Src=20 rank s=9 dim ker=11 (paper: 12 for m>=5; 11 at m=3); image dim 9 vs 9m-19=8
+   explicit family: separable=True, all nine sums zero=False
+m=5: dim Src=38 rank s=26 dim ker=12 (paper: 12 for m>=5; 11 at m=3); image dim 26 vs 9m-19=26
+   explicit family: separable=True, all nine sums zero=True
+m=7: dim Src=56 rank s=44 dim ker=12 (paper: 12 for m>=5; 11 at m=3); image dim 44 vs 9m-19=44
+   explicit family: separable=True, all nine sums zero=True
+m=11: dim Src=92 rank s=80 dim ker=12 (paper: 12 for m>=5; 11 at m=3); image dim 80 vs 9m-19=80
+   explicit family: separable=True, all nine sums zero=True
+m=13: dim Src=110 rank s=98 dim ker=12 (paper: 12 for m>=5; 11 at m=3); image dim 98 vs 9m-19=98
+   explicit family: separable=True, all nine sums zero=True
+VIGIA-FIN-OK exit=0 pico_kb=24128 t=0s

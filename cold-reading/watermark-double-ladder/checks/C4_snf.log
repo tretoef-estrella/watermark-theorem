@@ -1,0 +1,7 @@
+m=5 Smith profile of G: 0^38 1^26 5^10 25^1, other=0
+   Theorem 2 (m=5): 1^26 5^10 25^1
+m=7 Smith profile of G: 0^56 1^48 7^38 49^5, other=0
+   Theorem 2: 1^48 7^38 49^5
+m=11 Smith profile of G: 0^92 1^96 11^158 121^17, other=0
+   Theorem 2: 1^96 11^158 121^17
+VIGIA-FIN-OK exit=0 pico_kb=419840 t=6s

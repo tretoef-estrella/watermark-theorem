@@ -1,0 +1,2 @@
+m=13: G (507, 507), SAT gens (110, 507), F basis (397, 507) (expect rank 3(m-2)(m-1)+1=397), L_fam gens 169
+VIGIA-FIN-OK exit=0 pico_kb=23088 t=0s

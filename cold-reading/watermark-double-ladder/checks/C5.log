@@ -1,0 +1,10 @@
+m=5: lines on S_m: True; distinct pairs=2775; meeting pairs=675; smallest singular value: max over meeting 3.7e-16, min over non-meeting 3.1e-01
+   agreement with G (off-diagonal): 2775/2775, disagreements 0;  control k+l-1: disagreements 250 (2m^3=250)
+   diagonal of G = 2-m = {np.int64(-3)}; with diagonal the paper's count n(n+1)/2 = 2850
+m=7: lines on S_m: True; distinct pairs=10731; meeting pairs=1911; smallest singular value: max over meeting 5.0e-16, min over non-meeting 2.2e-01
+   agreement with G (off-diagonal): 10731/10731, disagreements 0;  control k+l-1: disagreements 686 (2m^3=686)
+   diagonal of G = 2-m = {np.int64(-5)}; with diagonal the paper's count n(n+1)/2 = 10878
+m=11: lines on S_m: True; distinct pairs=65703; meeting pairs=7623; smallest singular value: max over meeting 7.5e-16, min over non-meeting 1.4e-01
+   agreement with G (off-diagonal): 65703/65703, disagreements 0;  control k+l-1: disagreements 2662 (2m^3=2662)
+   diagonal of G = 2-m = {np.int64(-9)}; with diagonal the paper's count n(n+1)/2 = 66066
+VIGIA-FIN-OK exit=0 pico_kb=61184 t=0s

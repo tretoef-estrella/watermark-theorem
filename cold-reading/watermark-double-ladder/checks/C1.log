@@ -1,0 +1,22 @@
+m=5 n=75 symmetric=True diag={np.int64(-3)}
+  Lemma4 GN_j=m1: True  G1=3m1: True
+  Lemma9: {'a': True, 'b': True, 'c1': True, 'c2': True, 'c3': True, 'c4': True, 'c5': True, 'c6': True, 'ctrl5': False, 'ctrl6': False} (ctrl5/ctrl6 must be False)
+  ctrl G(k+l-1) satisfies (c5): False
+  Lemma11: #basis of Src_Z=38 (9m-7=38); G*s=0 for all: True
+  ctrl non-admissible datum in K: False
+  ctrl w2(k-l+1) in K: False
+m=7 n=147 symmetric=True diag={np.int64(-5)}
+  Lemma4 GN_j=m1: True  G1=3m1: True
+  Lemma9: {'a': True, 'b': True, 'c1': True, 'c2': True, 'c3': True, 'c4': True, 'c5': True, 'c6': True, 'ctrl5': False, 'ctrl6': False} (ctrl5/ctrl6 must be False)
+  ctrl G(k+l-1) satisfies (c5): False
+  Lemma11: #basis of Src_Z=56 (9m-7=56); G*s=0 for all: True
+  ctrl non-admissible datum in K: False
+  ctrl w2(k-l+1) in K: False
+m=11 n=363 symmetric=True diag={np.int64(-9)}
+  Lemma4 GN_j=m1: True  G1=3m1: True
+  Lemma9: {'a': True, 'b': True, 'c1': True, 'c2': True, 'c3': True, 'c4': True, 'c5': True, 'c6': True, 'ctrl5': False, 'ctrl6': False} (ctrl5/ctrl6 must be False)
+  ctrl G(k+l-1) satisfies (c5): False
+  Lemma11: #basis of Src_Z=92 (9m-7=92); G*s=0 for all: True
+  ctrl non-admissible datum in K: False
+  ctrl w2(k-l+1) in K: False
+VIGIA-FIN-OK exit=0 pico_kb=23040 t=0s

@@ -1,0 +1,5 @@
+m=5 n=75 rank G=37  rank K=38 (paper 9m-7=38)
+  EXACT: |det L|==m^((m^2+m+2)/2): 1; det Gram_c==m^(3(m-2)(2m-1)+3): 1; det Gram V == m^(3(m-3)^2): 1; prod SNF == m^(3(m-3)^2): 1
+m=7 n=147 rank G=91  rank K=56 (paper 9m-7=56)
+  EXACT: |det L|==m^((m^2+m+2)/2): 1; det Gram_c==m^(3(m-2)(2m-1)+3): 1; det Gram V == m^(3(m-3)^2): 1; prod SNF == m^(3(m-3)^2): 1
+VIGIA-FIN-OK exit=0 pico_kb=24624 t=0s
