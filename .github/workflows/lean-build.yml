@@ -1,0 +1,52 @@
+# Builds the Lean proofs of «The Watermark Theorem» and «The Double Ladder Theorem» from source,
+# and runs the two final checks of the Lean certificates: the statements and the printed axioms.
+# Started by hand (Actions tab → «Lean build» → «Run workflow»).
+name: Lean build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    defaults:
+      run:
+        shell: bash
+        working-directory: lean/project
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install elan (the toolchain in lean-toolchain is installed by lake)
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Mathlib's compiled files
+        run: lake exe cache get
+
+      - name: Build the modules of RequestProject (Watermark W1–W7, Double Ladder DL1–DL3)
+        run: lake build
+
+      - name: Final check of the Watermark Theorem (CheckFinal)
+        run: lake env lean ../watermark/checks/CheckFinal.lean 2>&1 | tee CheckFinal_actions.log
+
+      - name: Final check of the Double Ladder Theorem (CheckDLFinal)
+        run: lake env lean ../double-ladder/checks_lean/CheckDLFinal.lean 2>&1 | tee CheckDLFinal_actions.log
+
+      - name: No sorry and no extra axiom in the printed axioms
+        run: |
+          cat CheckFinal_actions.log CheckDLFinal_actions.log > Checks_actions.log
+          if grep -q 'sorryAx' Checks_actions.log; then exit 1; fi
+          if grep -q -E '(^|: )error' Checks_actions.log; then exit 1; fi
+          test "$(grep -c 'depends on axioms' CheckFinal_actions.log)" -eq 1
+          test "$(grep -c 'depends on axioms' CheckDLFinal_actions.log)" -eq 5
+          grep 'depends on axioms' Checks_actions.log | grep -v -E '\[(propext|Classical\.choice|Quot\.sound)(, (propext|Classical\.choice|Quot\.sound))*\]$' && exit 1 || true
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: Checks_actions_logs
+          path: |
+            lean/project/CheckFinal_actions.log
+            lean/project/CheckDLFinal_actions.log
