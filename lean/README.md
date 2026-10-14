@@ -13,6 +13,12 @@ For prime `m`, Shioda asked in 1987 whether `|det NS| = m^{3(m−3)²}` (Questio
 
 Each gives the theorem and its definitions exactly as Lean prints them, a line-by-line comparison with the paper, what is **not** formalized, the trust base, the procedure, the data of every piece, and how to reproduce everything.
 
+## Rebuilt on GitHub Actions
+
+[![Lean build](https://github.com/tretoef-estrella/watermark-theorem/actions/workflows/lean-build.yml/badge.svg)](https://github.com/tretoef-estrella/watermark-theorem/actions/workflows/lean-build.yml)
+
+The workflow [`.github/workflows/lean-build.yml`](../.github/workflows/lean-build.yml) builds [project/](project/) from source with the toolchain and Mathlib pinned there, then runs the two final checks, [watermark/checks/CheckFinal.lean](watermark/checks/CheckFinal.lean) and [double-ladder/checks_lean/CheckDLFinal.lean](double-ladder/checks_lean/CheckDLFinal.lean). It fails if the printed axioms contain `sorryAx`, if Lean reports an error, or if any theorem depends on an axiom other than `propext`, `Classical.choice` and `Quot.sound`. It is started by hand (Actions → «Lean build» → «Run workflow»). First run: 14 October 2026, [run 38530974088](https://github.com/tretoef-estrella/watermark-theorem/actions/runs/38530974088), green in 5 min 42 s.
+
 ## In one line
 
 `Watermark.watermark_theorem` ([project/RequestProject/Watermark/W7.lean](project/RequestProject/Watermark/W7.lean)), `DoubleLadder.double_ladder_theorem` and `DoubleLadder.double_ladder_five` ([project/RequestProject/DoubleLadder/DL3.lean](project/RequestProject/DoubleLadder/DL3.lean)) compile with no `sorry`, no `native_decide` and no added axiom. They depend only on the axioms `propext`, `Classical.choice`, `Quot.sound`.
