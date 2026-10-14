@@ -4,7 +4,7 @@
 
 **Rafael Amichis Luengo** · Madrid · tretoef@gmail.com
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23062529.svg)](https://doi.org/10.5281/zenodo.23062529) [![Hexagon](https://img.shields.io/badge/Hexagon-2610.00231-1f6f78)](https://hexagonmath.org/abs/2610.00231v1) [![Lean build](https://github.com/tretoef-estrella/watermark-theorem/actions/workflows/lean-build.yml/badge.svg)](https://github.com/tretoef-estrella/watermark-theorem/actions/workflows/lean-build.yml)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23062529-blue.svg)](https://doi.org/10.5281/zenodo.23062529) [![Lean certificates DOI](https://img.shields.io/badge/Lean_certificates_DOI-10.5281%2Fzenodo.23062529-blue.svg)](https://doi.org/10.5281/zenodo.23062529) [![Hexagon](https://img.shields.io/badge/Hexagon-2610.00231-1f6f78)](https://hexagonmath.org/abs/2610.00231v1) [![Lean build](https://github.com/tretoef-estrella/watermark-theorem/actions/workflows/lean-build.yml/badge.svg)](https://github.com/tretoef-estrella/watermark-theorem/actions/workflows/lean-build.yml)
 
 > **Status.**
 > - **Proved.** The Watermark Theorem was proved in June 2026. The Double Ladder Theorem was proved for every prime on 30 September 2026, by the short integral argument that the Lean proof follows.
@@ -51,7 +51,7 @@ For `m` prime to 6, the lines generate the Néron–Severi group: Schütt, Shiod
 
 ## In every even dimension (1 October 2026)
 
-**[The Watermark in Every Even Dimension](papers/THE_WATERMARK_IN_EVERY_EVEN_DIMENSION.pdf)** ([markdown](papers/THE_WATERMARK_IN_EVERY_EVEN_DIMENSION.md)) · [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23091045.svg)](https://doi.org/10.5281/zenodo.23091045)
+**[The Watermark in Every Even Dimension](papers/THE_WATERMARK_IN_EVERY_EVEN_DIMENSION.pdf)** ([markdown](papers/THE_WATERMARK_IN_EVERY_EVEN_DIMENSION.md)) · [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23091045-blue.svg)](https://doi.org/10.5281/zenodo.23091045)
 
 A sequel. Let `X` be the Fermat variety of degree `m` and dimension `2k`, `G = μ_m^{2k+2}/μ_m`, and `Hdg(X)` the lattice of integral Hodge classes of middle degree.
 
