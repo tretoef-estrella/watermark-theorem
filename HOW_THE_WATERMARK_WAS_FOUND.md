@@ -6,6 +6,8 @@
 
 *A note on the origin of the Watermark law and the Watermark Theorem: what was found, in what order, and what belongs to whom.*
 
+> **Note of 30 October 2026.** A fuller and more precise account of how both theorems were found and proved is [HOW_THE_WATERMARK_AND_DOUBLE_LADDER_WERE_MADE.md](HOW_THE_WATERMARK_AND_DOUBLE_LADDER_WERE_MADE.md) ([PDF](HOW_THE_WATERMARK_AND_DOUBLE_LADDER_WERE_MADE.pdf)). It was written after going through every conversation and working document of the project. Where the two texts differ, that account is the reference. This note is kept as it was written on 30 September 2026, with its corrections of 14 October and its precisions of 30 October at the end.
+
 ---
 
 ## The result
