@@ -101,3 +101,8 @@ The sequel, the **Double Ladder**, gives the structure of the discriminant group
 ---
 
 *Corrections of 14 October 2026 (copy attached to the Hexagon deposit of «The Watermark and Double Ladder Theorems»).* Two sentences of the note of 30 September 2026 are corrected here: §5, Schütt–Shioda–van Luijk computed the determinant on their basis of lines, which is the Néron–Severi lattice only when `gcd(m, 6) = 1`; §7, the June proof had two steps checked by computer only. Nothing else is changed.
+
+*Precisions of 30 October 2026.* The saved conversations of June 2026 were read again in full, and three points are made precise here; nothing above is changed.
+- §6 and the last row of §8, the name. On 4 June 2026 the author found his first working name for the law not serious enough and asked for another; the auditing assistant proposed four names, *Watermark* among them, and the author chose it. The name *Double Ladder* was given on 5 June 2026: the author asked for a name with the words «double» and «ladder», both taken from the title of the builder's report of that morning, and the auditing assistant joined them as *The Double Ladder Theorem*.
+- §7, the Watermark Theorem. As the corrections of 14 October say, two steps of the June proof were checked by computer only; the proof for every prime is the integral route of 30 September 2026, certified in Lean.
+- §7, the Double Ladder. Its statement and a first argument, through a rank that drops like a ladder, date from 5 June 2026; four steps of that argument were checked by computer at a few primes only. The proof for every prime is the one of 30 September 2026.

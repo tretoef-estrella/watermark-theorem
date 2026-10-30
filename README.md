@@ -7,7 +7,7 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23062529-blue.svg)](https://doi.org/10.5281/zenodo.23062529) [![Lean certificates DOI](https://img.shields.io/badge/Lean_certificates_DOI-10.5281%2Fzenodo.23062529-blue.svg)](https://doi.org/10.5281/zenodo.23062529) [![Hexagon](https://img.shields.io/badge/Hexagon-2610.00231-1f6f78)](https://hexagonmath.org/abs/2610.00231v1) [![Lean build](https://github.com/tretoef-estrella/watermark-theorem/actions/workflows/lean-build.yml/badge.svg)](https://github.com/tretoef-estrella/watermark-theorem/actions/workflows/lean-build.yml) [![ORCID](https://img.shields.io/badge/ORCID-0009--0008--6252--675X-a6ce39.svg)](https://orcid.org/0009-0008-6252-675X)
 
 > **Status.**
-> - **Proved.** The Watermark Theorem was proved in June 2026. The Double Ladder Theorem was proved for every prime on 30 September 2026, by the short integral argument that the Lean proof follows.
+> - **Proved.** The Watermark Theorem was first proved in June 2026, with two steps checked by computer only; the proof for every prime is the integral route of 30 September 2026. The Double Ladder Theorem was proved for every prime on 30 September 2026, by the short integral argument that the Lean proof follows.
 > - **Verified in Lean.** Both are certified in Lean 4 with Mathlib (30 September 2026): no `sorry`, and only the three standard axioms. An independent cold reading of the Double Ladder certificate found no fatal error and no gap. Both proofs are rebuilt from source on GitHub Actions, with the final checks of both certificates (the «Lean build» badge above; first run 14 October 2026).
 > - **What is not formalized** is stated below.
 > - **Not refereed.** The results have not yet been refereed by a human expert.
