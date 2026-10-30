@@ -138,6 +138,8 @@ The last two commands print the theorems, their definitions and axioms, and exam
 
 The formula was found on a single day, 4 June 2026, by reading published tables with two images in mind: a pressure test on a tanker of dangerous goods, and a result split into scattered pieces. The whole story, with what belongs to whom, is in [HOW_THE_WATERMARK_WAS_FOUND.md](HOW_THE_WATERMARK_WAS_FOUND.md) ([PDF](HOW_THE_WATERMARK_WAS_FOUND.pdf)).
 
+How both theorems were made, with the method behind the work and who did what, is told in [HOW_THE_WATERMARK_AND_DOUBLE_LADDER_WERE_MADE.md](HOW_THE_WATERMARK_AND_DOUBLE_LADDER_WERE_MADE.md) ([PDF](HOW_THE_WATERMARK_AND_DOUBLE_LADDER_WERE_MADE.pdf)), written on 30 October 2026 after going through every conversation and working document of the project.
+
 The empirical law behind it, which includes an even-degree half that is still a conjecture, is *The Watermark Law*. It is in the Hodge–Fermat campaign, [chaise-longue-theorem/hodge-fermat-campaign](https://github.com/tretoef-estrella/chaise-longue-theorem/tree/main/hodge-fermat-campaign), together with the instruments and run logs of June 2026.
 
 ## Repository map
@@ -150,6 +152,7 @@ engines/every-even-dimension/        the seven engines of the sequel, with their
 cold-reading/watermark-double-ladder/  the cold reading of the paper of October: mission, report, grading, the reader's scripts and logs
 cold-reading/every-even-dimension/   the cold reading of the sequel: mission, report, the reader's scripts and logs
 HOW_THE_WATERMARK_WAS_FOUND.md/.pdf  the story of the discovery
+HOW_THE_WATERMARK_AND_DOUBLE_LADDER_WERE_MADE.md/.pdf  how both theorems were made: the story, the method, who did what
 lean/                                the Lean 4 proofs
   README.md                          what is where, and how to reproduce it
   project/                           the Lean project (12 files)
