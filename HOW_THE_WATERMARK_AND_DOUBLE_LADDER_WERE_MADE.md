@@ -71,7 +71,7 @@ By late morning the builder had assembled the whole chain. The auditor wrote the
 The June record called both theorems proved. Re-read in September, that was too strong in places:
 
 - In the June proof of the Double Ladder, four steps had been confirmed by computer at three or four primes and never written for a general prime.
-- In the June proof of the Watermark, one inclusion between two explicit lattices was checked in files, not proved in the text.
+- In the June proof of the Watermark, two steps, an inclusion between two explicit lattices and the rank of one of them, were checked in files, not proved in the text.
 - Our m = 11 «blind prediction» was already in print: Aljovin–Movasati–Villaflor list the group at `m = 5, 7, 11, 13`.
 - Shioda asked for the determinant only, not for the group, as one early text said.
 
