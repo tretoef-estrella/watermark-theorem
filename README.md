@@ -136,7 +136,7 @@ The last two commands print the theorems, their definitions and axioms, and exam
 
 ## How the Watermark was found
 
-The formula was found on a single day, 4 June 2026, by reading published tables with two images in mind: a pressure test on a tanker of dangerous goods, and a result split into scattered pieces. The first account of the discovery, written on 30 September 2026, is in [HOW_THE_WATERMARK_WAS_FOUND.md](HOW_THE_WATERMARK_WAS_FOUND.md) ([PDF](HOW_THE_WATERMARK_WAS_FOUND.pdf)); it is kept as written.
+The formula was found on a single day, 4 June 2026, by reading published tables with two images in mind: a pressure test on a tanker of dangerous goods, and a result split into scattered pieces. The first account of the discovery, written on 30 September 2026, is in [HOW_THE_WATERMARK_WAS_FOUND.md](HOW_THE_WATERMARK_WAS_FOUND.md) ([PDF](HOW_THE_WATERMARK_WAS_FOUND.pdf)); it keeps its text of 30 September, with dated corrections.
 
 How both theorems were made, with the method behind the work and who did what, is told in [HOW_THE_WATERMARK_AND_DOUBLE_LADDER_WERE_MADE.md](HOW_THE_WATERMARK_AND_DOUBLE_LADDER_WERE_MADE.md) ([PDF](HOW_THE_WATERMARK_AND_DOUBLE_LADDER_WERE_MADE.pdf)), written on 30 October 2026 after going through every conversation and working document of the project. It is more precise, and where the two accounts differ it is the reference.
 

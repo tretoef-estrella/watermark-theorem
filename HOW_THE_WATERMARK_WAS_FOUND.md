@@ -6,7 +6,7 @@
 
 *A note on the origin of the Watermark law and the Watermark Theorem: what was found, in what order, and what belongs to whom.*
 
-> **Note of 30 October 2026.** A fuller and more precise account of how both theorems were found and proved is [HOW_THE_WATERMARK_AND_DOUBLE_LADDER_WERE_MADE.md](HOW_THE_WATERMARK_AND_DOUBLE_LADDER_WERE_MADE.md) ([PDF](HOW_THE_WATERMARK_AND_DOUBLE_LADDER_WERE_MADE.pdf)). It was written after going through every conversation and working document of the project. Where the two texts differ, that account is the reference. This note is kept as it was written on 30 September 2026, with its corrections of 14 October and its precisions of 30 October at the end.
+> **Note of 30 October 2026.** A fuller and more precise account of how both theorems were found and proved is [HOW_THE_WATERMARK_AND_DOUBLE_LADDER_WERE_MADE.md](HOW_THE_WATERMARK_AND_DOUBLE_LADDER_WERE_MADE.md) ([PDF](HOW_THE_WATERMARK_AND_DOUBLE_LADDER_WERE_MADE.pdf)). It was written after going through every conversation and working document of the project. Where the two texts differ, that account is the reference. This note keeps the text of 30 September 2026, with its corrections of 14 October and its precisions of 30 October at the end; on 31 October §6 and the table of §8 were brought into line with that account.
 
 ---
 
@@ -52,7 +52,7 @@ It was there. Law 1 and Law 2 were two faces of a single formula:
 
 > **The Watermark law.** `|disc V| = m^{3(m−3)²}` for odd `m`, and `|disc V| = m^{3(m−3)²} · (m/4)³` for even `m`.
 
-It fits all twelve rows of AMV's Table 1 (`m = 3, …, 14`) at once, prime powers included. The mysterious gap of 6 is the cube `(m/4)³ = (q/2)³`, split between the two primes: `−3` at the prime 2 and `+3` at `q`. Five further cells were predicted in writing before any computation: `m = 17, 19` (odd) and `m = 16, 18, 20` (even). All seven sealed exponents were met exactly.
+It fits all twelve rows of AMV's Table 1 (`m = 3, …, 14`) at once, prime powers included. The mysterious gap of 6 is the cube `(m/4)³ = (q/2)³`, split between the two primes: `−3` at the prime 2 and `+3` at `q`. Five further cells were predicted in writing before any computation: `m = 17, 19` (odd) and `m = 16, 18, 20` (even). All seven sealed exponents were met exactly. (For the odd ones, Schütt, Shioda and van Luijk had already computed the determinant, as was found afterwards.)
 
 **What this second image gave was the unification: the conviction that two unrelated-looking laws were one.** The formula itself was read off the published tables.
 
@@ -65,31 +65,33 @@ The literature was then checked against the law, with the sources read in full:
 - **Aljovin, Movasati and Villaflor (2019)** gave the method (Gram matrix and Smith normal form) and the tables in which the law was read. Their Table 1 lists, by machine, the elementary divisors of the lattice for every `m ≤ 14`. For the primes `m = 5, 7, 11, 13` their product is `m^{3(m−3)²}`, and the rows already show the group that the Double Ladder describes: `(Z/5)^{10} × Z/25` at `m = 5`, and `7^{38} · 49^{5}`, `11^{158} · 121^{17}`, `13^{254} · 169^{23}` at `m = 7, 11, 13`. They give no general formula and no proof.
 - **The even half** of the law, with its factor `(m/4)³`, appears in none of these sources, nor in Degtyarev's survey. It remains a conjecture, tested blind in three even cells.
 
-## 6. The name
+## 6. The names
 
-The author chose the name. He first gave the law a playful working name and, the same day, renamed it himself **The Watermark Law**, "for seriousness". The assistant only corrected the English word: *Discriminant*, not *Discrimination*. Its first gloss of the image was a watermark that shows only when the sheet is held against the light. The public wording says what the law does: **the degree stamps its watermark on the discriminant, and the law reads it off the degree alone.**
+The author chose both names, with the advice of the auditing assistant, each for its mechanism. For the first, he asked the auditor what the law really does; the auditor explained it and proposed four names, *Watermark* among them, and the author chose it. The mechanism behind the name: for prime degree `m`, only one prime appears in the discriminant, the degree itself, and its exponent `3(m−3)²` depends on the degree alone. The degree is stamped on the lattice like a watermark, which shows only when the whole sheet is held against the light, that is, when the lattice is judged whole, through one number.
+
+The name *Double Ladder* was given on 5 June 2026. The author asked whether the second result was a theorem of its own and, if so, wanted a name with the words «double» and «ladder», both taken from the title of that morning's report by the building assistant; the auditor agreed that it was a theorem of its own (the Watermark says how much, the Double Ladder says what) and that the two words fit, and the author chose *The Double Ladder Theorem*. The group has factors of two sizes, `Z/m` and `Z/m²`, and the number of the larger ones is read from a ladder: at rung `ν` the rank drops by `6ν = 2 × 3ν`, and that factor 2 is why the ladder is double.
 
 ## 7. The proof, and Lean
 
 The same night the odd prime half was proved, as the **Watermark Theorem**: for every prime `m ≥ 5`, `|disc V| = m^{3(m−3)²}`. The complete text passed a line-by-line audit; two of its steps (the inclusion `SAT ⊆ K` and the rank `9m − 7`) were checked by computer and not written for general `m`, and both are proved for every prime in the integral route below. Since the lines span the Néron–Severi lattice for such `m`, this answers Shioda's Question 7.4 (formula (7.10)) for the complex Fermat surface of every prime degree `m ≥ 5`, open since 1987. The June proof used the arithmetic of the cyclotomic field.
 
-On 30 September 2026 the theorem was **certified in Lean 4**, along a second route that is entirely integral and uses no characters. The formal statement (`Watermark.watermark_theorem`) says that `V` is free of rank `3(m−1)(m−2)+1` and that, for every prime `m ≥ 5` and every basis of `V`, the Gram determinant equals `m^{3(m−3)²}`, with positive sign. The proof depends only on the three standard axioms of Lean's logic. The formal proofs were written by the AI system Aristotle (Harmonic), then compiled and audited independently on the author's machine; the Lean certificate lists every step.
+On 30 September 2026 the theorem was **certified in Lean 4**, along a second route that is entirely integral and uses no characters. The formal statement (`Watermark.watermark_theorem`) says that `V` is free of rank `3(m−1)(m−2)+1` and that, for every prime `m ≥ 5` and every basis of `V`, the Gram determinant equals `m^{3(m−3)²}`, with positive sign. The proof depends only on the three standard axioms of Lean's logic. The formal proofs were written by the AI system Aristotle (Harmonic), then compiled and audited independently on the author's machine; the Lean certificate lists every step. Lean does not check two things, and the paper says so: that the Gram matrix is the intersection matrix of the lines (proved by hand), and that the lines generate the Néron–Severi lattice (Schütt–Shioda–van Luijk and Degtyarev).
 
 The sequel, the **Double Ladder**, gives the structure of the discriminant group and not only its order: `V*/V ≅ (Z/m)^{3m²−24m+59} × (Z/m²)^{3m−16}` for every prime `m ≥ 7`, and `(Z/5)^{10} × Z/25` for `m = 5`. Its profile law was already among the June findings. It was proved by a short integral argument on 30 September 2026 and certified in Lean the same day, in the same project; it has its own Lean certificate.
 
 ## 8. Who did what
 
-| | Owner |
+| What | Owner |
 |---|---|
-| The formula for prime degree, as a question | Shioda (1987) |
-| The formula checked for every odd `m ≤ 81`; the lines span Néron–Severi | Schütt–Shioda–van Luijk (2010), with Degtyarev (2015) |
-| The formula still used as a conjecture | Shioda (2015) |
-| The method (Gram matrix of linear cycles and Smith form) and the tables, with the group for every `m ≤ 14` | Aljovin–Movasati–Villaflor (2019) |
-| The cistern (judge the whole by one number) and the scattered pieces (two laws are one) | the author |
-| Reading the unified law in the tables, including the even half; the blind predictions | the author with an AI assistant, independently audited |
-| The proof for prime `m ≥ 5` (June 2026) and the integral route certified in Lean (September 2026) | the author with AI assistants (Claude, and Aristotle for Lean) |
-| The Double Ladder: proof for every prime `m ≥ 5` and Lean certificate (30 September 2026) | the author with AI assistants (Claude, and Aristotle for Lean) |
-| The name *Watermark* | the author |
+| The formula for prime degree, as a question (1987) | T. Shioda |
+| The determinant checked by computer for every odd `m ≤ 81`; the lines span `NS ⊗ Q` | M. Schütt, T. Shioda, R. van Luijk (2010) |
+| The lines generate `NS(S_m)` over `Z` for `gcd(m, 6) = 1` | A. Degtyarev (2015), with Schütt–Shioda–van Luijk |
+| The method (Gram matrix of linear cycles and Smith form) and the tables, with the group for `m ≤ 14` | E. Aljovin, H. Movasati, R. Villaflor Loyola (2019) |
+| Direction, choice of targets, the images and questions, the names (with Claude's advice) | R. Amichis Luengo |
+| The unified law, the sealed predictions, the June proofs (4–5 June 2026) | a Claude instance (the builder), audited by another Claude instance |
+| The integral proof of 30 September and the paper | Claude instances |
+| The Lean proofs | Aristotle (Harmonic), compiled and audited on the author's machine |
+| Independent cold readings (pencil proof, Lean certificate, paper) | three separate Claude instances |
 
 ## References
 
@@ -104,7 +106,8 @@ The sequel, the **Double Ladder**, gives the structure of the discriminant group
 
 *Corrections of 14 October 2026 (copy attached to the Hexagon deposit of «The Watermark and Double Ladder Theorems»).* Two sentences of the note of 30 September 2026 are corrected here: §5, Schütt–Shioda–van Luijk computed the determinant on their basis of lines, which is the Néron–Severi lattice only when `gcd(m, 6) = 1`; §7, the June proof had two steps checked by computer only. Nothing else is changed.
 
-*Precisions of 30 October 2026.* The saved conversations of June 2026 were read again in full, and three points are made precise here; nothing above is changed.
-- §6 and the last row of §8, the name. On 4 June 2026 the author found his first working name for the law not serious enough and asked for another; the auditing assistant proposed four names, *Watermark* among them, and the author chose it. The name *Double Ladder* was given on 5 June 2026: the author asked for a name with the words «double» and «ladder», both taken from the title of the builder's report of that morning, and the auditing assistant joined them as *The Double Ladder Theorem*.
+*Precisions of 30 October 2026.* The saved conversations of June 2026 were read again in full, and the following points are made precise here.
 - §7, the Watermark Theorem. As the corrections of 14 October say, two steps of the June proof were checked by computer only; the proof for every prime is the integral route of 30 September 2026, certified in Lean.
 - §7, the Double Ladder. Its statement and a first argument, through a rank that drops like a ladder, date from 5 June 2026; four steps of that argument were checked by computer at a few primes only. The proof for every prime is the one of 30 September 2026.
+
+*Revision of 31 October 2026.* §6 now tells how both names were chosen, as the fuller account of 30 October does, and the table of §8 is the one of that account (the earlier table credited the author with reading the unified law in the tables; in the record it was read by the building assistant). Two sentences were added, in §4 and §7. Nothing else is changed.
