@@ -4,19 +4,26 @@
 
 **Rafael Amichis Luengo** · Madrid · tretoef@gmail.com
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23062529-blue.svg)](https://doi.org/10.5281/zenodo.23062529) [![Lean certificates DOI](https://img.shields.io/badge/Lean_certificates_DOI-10.5281%2Fzenodo.23062529-blue.svg)](https://doi.org/10.5281/zenodo.23062529) [![Hexagon](https://img.shields.io/badge/Hexagon-2610.00231-1f6f78)](https://hexagonmath.org/abs/2610.00231v1) [![Lean build](https://github.com/tretoef-estrella/watermark-theorem/actions/workflows/lean-build.yml/badge.svg)](https://github.com/tretoef-estrella/watermark-theorem/actions/workflows/lean-build.yml) [![ORCID](https://img.shields.io/badge/ORCID-0009--0008--6252--675X-a6ce39.svg)](https://orcid.org/0009-0008-6252-675X)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23062529-blue.svg)](https://doi.org/10.5281/zenodo.23062529) [![Lean certificates DOI](https://img.shields.io/badge/Lean_certificates_DOI-10.5281%2Fzenodo.23062529-blue.svg)](https://doi.org/10.5281/zenodo.23062529) [![Hexagon](https://img.shields.io/badge/Hexagon-2610.00231-1f6f78)](https://hexagonmath.org/2610.00231) [![Lean build](https://github.com/tretoef-estrella/watermark-theorem/actions/workflows/lean-build.yml/badge.svg)](https://github.com/tretoef-estrella/watermark-theorem/actions/workflows/lean-build.yml) [![ORCID](https://img.shields.io/badge/ORCID-0009--0008--6252--675X-a6ce39.svg)](https://orcid.org/0009-0008-6252-675X)
 
 > **Status.**
 > - **Proved.** The Watermark Theorem was first proved in June 2026, with two steps checked by computer only; the proof for every prime is the integral route of 30 September 2026. The Double Ladder Theorem was proved for every prime on 30 September 2026, by the short integral argument that the Lean proof follows.
 > - **Verified in Lean.** Both are certified in Lean 4 with Mathlib (30 September 2026): no `sorry`, and only the three standard axioms. An independent cold reading of the Double Ladder certificate found no fatal error and no gap. Both proofs are rebuilt from source on GitHub Actions, with the final checks of both certificates (the «Lean build» badge above; first run 14 October 2026).
 > - **What is not formalized** is stated below.
-> - **Not refereed.** The results have not yet been refereed by a human expert.
+> - **Not published in a journal.** The paper received an anonymous preliminary referee report in October 2026; the revised version of 25 November 2026 answers it point by point.
 
-## The paper (14 October 2026)
+## The paper (revised version, 25 November 2026)
 
-**[The Watermark and Double Ladder Theorems](papers/THE_WATERMARK_AND_DOUBLE_LADDER_THEOREMS.pdf)** ([LaTeX source](papers/THE_WATERMARK_AND_DOUBLE_LADDER_THEOREMS.tex)) · Hexagon [hexagon:2610.00231](https://hexagonmath.org/abs/2610.00231v1) · Zenodo [10.5281/zenodo.23360642](https://doi.org/10.5281/zenodo.23360642)
+**[The Watermark and Double Ladder Theorems. The discriminant group of the Néron–Severi lattice of a Fermat surface of prime degree](papers/THE_WATERMARK_AND_DOUBLE_LADDER_THEOREMS.pdf)** ([LaTeX source](papers/THE_WATERMARK_AND_DOUBLE_LADDER_THEOREMS.tex)) · Zenodo [10.5281/zenodo.24527617](https://doi.org/10.5281/zenodo.24527617) (version 3) · Hexagon [hexagon:2610.00231](https://hexagonmath.org/2610.00231) (version 2 submitted on 25 November 2026)
 
-One paper, 12 pages, with both theorems and the transcendental lattice as a corollary. It prints the proof along which the theorems were formalized in Lean: entirely over the integers, without characters, every step written for general `m`. It was read by an independent cold reader (an AI system): «holds with corrections», no fatal error and no gap; two errors that touch no statement and 21 points of presentation, all applied. The report and the reader's own scripts and logs are in [cold-reading/watermark-double-ladder](cold-reading/watermark-double-ladder).
+One paper, 16 pages, with both theorems and the transcendental lattice as a corollary. It prints the proof along which the theorems were formalized in Lean: entirely over the integers, without characters, every step written for general `p` (the prime degree is called `p` in the paper, `m` in Lean and below). The statements are those of the version of 14 October. The revision:
+- compares the result precisely with Degtyarev (2015) and Degtyarev–Shimada (2016), and bases the novelty claim on that comparison;
+- claims only formula (7.10) of Shioda's Question 7.4, over the complex numbers (Question 7.2, in positive characteristic, is not treated);
+- prints the Lean definitions and the three final Lean statements verbatim;
+- credits the decomposition of the lattice of lines over `Z[ζ]` to Schütt, Shioda and van Luijk, and claims as new only its integral form, pencil by pencil;
+- says what is standard and what is new, and explains the two names.
+
+It includes the corrections of the preliminary referee report and of six further readings of the whole text or of the changes, by AI systems, against the sources and the Lean files. The earlier version (14 October 2026, 12 pages) is version 2 of the Zenodo record ([10.5281/zenodo.23360642](https://doi.org/10.5281/zenodo.23360642)) and version 1 on Hexagon ([hexagon:2610.00231v1](https://hexagonmath.org/abs/2610.00231v1)). It was read by an independent cold reader (an AI system): «holds with corrections», no fatal error and no gap; two errors that touch no statement and 21 points of presentation, all applied. That report and the reader's own scripts and logs are in [cold-reading/watermark-double-ladder](cold-reading/watermark-double-ladder).
 
 The two papers of June 2026 below are kept as the history of the result.
 
@@ -84,16 +91,17 @@ For the Fermat cubic of dimension `2k` this gives `|disc Hdg(X)| = 3^{2·4^k + 1
 
 ## What was known before
 
-- **Shioda (1987)** asked, for prime `m`, whether `|det NS| = m^{3(m−3)²}` (Questions 7.2 and 7.4). He asked for the determinant only.
+- **Shioda (1987)** asked, for prime `m`, whether `|det NS| = m^{3(m−3)²}`: in Question 7.2 in characteristic `r ≡ 1 (mod m)`, and in Question 7.4, formula (7.10), over the complex numbers. He asked for the determinant only. The paper answers (7.10); Question 7.2 is not treated.
 - **Schütt, Shioda and van Luijk (2010)** computed by computer, for every odd `m ≤ 81`, the Gram determinant of their basis of lines, and found this value; that basis spans the Néron–Severi lattice when `m` is prime to 6.
 - **Aljovin, Movasati and Villaflor (2019)** listed the elementary divisors by computer for `m ≤ 14`. For `m = 5, 7, 11, 13` their rows are those of the table above.
 - In **2015** Shioda still used the formula inside a conjecture.
+- **Degtyarev (2015)** proved that the lines generate the Néron–Severi group, by a topological argument; **Degtyarev and Shimada (2016)** studied the same question for the linear subspaces of Fermat varieties of higher dimension. Neither computes the discriminant or its group.
 
-As far as we could determine, no proof for all primes existed, and no general formula for the group had been stated. The sources, read in the original, are in §10 of the Watermark certificate and §9 of the Double Ladder certificate.
+As far as we could determine, no proof for all primes existed, and no general formula for the group had been stated. The sources we consulted are discussed in §11 of the paper, §10 of the Watermark certificate and §9 of the Double Ladder certificate.
 
 ## How they are proved
 
-**Both theorems, in one paper.** [papers/THE_WATERMARK_AND_DOUBLE_LADDER_THEOREMS.pdf](papers/THE_WATERMARK_AND_DOUBLE_LADDER_THEOREMS.pdf) (October 2026) proves both by the integral route described below for the Lean proof.
+**Both theorems, in one paper.** [papers/THE_WATERMARK_AND_DOUBLE_LADDER_THEOREMS.pdf](papers/THE_WATERMARK_AND_DOUBLE_LADDER_THEOREMS.pdf) (revised 25 November 2026) proves both by the integral route described below for the Lean proof.
 
 **The Watermark.** The paper of June 2026 ([papers/THE_WATERMARK_THEOREM.pdf](papers/THE_WATERMARK_THEOREM.pdf)) proves it by explicit lattice computations with characters. The Lean proof follows a second route, entirely over the integers and without characters. The whole argument, in both routes, works with the explicit `3m² × 3m²` integer matrix of the lines.
 
@@ -145,11 +153,11 @@ The empirical law behind it, which includes an even-degree half that is still a 
 ## Repository map
 
 ```
-papers/                              the paper of October 2026, The Watermark and Double Ladder Theorems (pdf and tex);
+papers/                              the paper, The Watermark and Double Ladder Theorems (revised 25 November 2026; pdf and tex);
                                      the two papers of June: The Watermark Theorem, The Double Ladder Theorem (md and pdf)
                                      and the sequel, The Watermark in Every Even Dimension (md and pdf)
 engines/every-even-dimension/        the seven engines of the sequel, with their logs
-cold-reading/watermark-double-ladder/  the cold reading of the paper of October: mission, report, grading, the reader's scripts and logs
+cold-reading/watermark-double-ladder/  the cold reading of the version of 14 October: mission, report, grading, the reader's scripts and logs
 cold-reading/every-even-dimension/   the cold reading of the sequel: mission, report, the reader's scripts and logs
 HOW_THE_WATERMARK_WAS_FOUND.md/.pdf  the story of the discovery
 HOW_THE_WATERMARK_AND_DOUBLE_LADDER_WERE_MADE.md/.pdf  how both theorems were made: the story, the method, who did what
@@ -190,6 +198,6 @@ CITATION.cff · LICENSE · LICENSE-TEXT.md
 
 The code is under the MIT licence ([LICENSE](LICENSE)). The texts are under CC BY 4.0 ([LICENSE-TEXT.md](LICENSE-TEXT.md)). How to cite: [CITATION.cff](CITATION.cff).
 
-This repository, the papers, the two certificates, the pencil proof and the story are archived on Zenodo: [doi.org/10.5281/zenodo.23062529](https://doi.org/10.5281/zenodo.23062529) (version 2, with the paper of October: [10.5281/zenodo.23360642](https://doi.org/10.5281/zenodo.23360642)). The paper of October is also on the Hexagon preprint server: [hexagon:2610.00231](https://hexagonmath.org/abs/2610.00231v1). The sequel has its own record: [doi.org/10.5281/zenodo.23091045](https://doi.org/10.5281/zenodo.23091045).
+This repository, the papers, the two certificates, the pencil proof and the story are archived on Zenodo: [doi.org/10.5281/zenodo.23062529](https://doi.org/10.5281/zenodo.23062529) (all versions; version 3, with the revised paper of 25 November 2026: [10.5281/zenodo.24527617](https://doi.org/10.5281/zenodo.24527617); version 2, with the paper of 14 October: [10.5281/zenodo.23360642](https://doi.org/10.5281/zenodo.23360642)). The paper is also on the Hexagon preprint server: [hexagon:2610.00231](https://hexagonmath.org/2610.00231). The sequel has its own record: [doi.org/10.5281/zenodo.23091045](https://doi.org/10.5281/zenodo.23091045).
 
 *Cite as:* Amichis Luengo, R. (2026). *The Watermark and Double Ladder Theorems (Verified in Lean)*. Zenodo. https://doi.org/10.5281/zenodo.23062529
